@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Denis Sidorov](https://up.htmlacademy.ru/adaptive/28/user/2184111).
-* Наставник: `Неизвестно`.
+- Студент: [Denis Sidorov](https://up.htmlacademy.ru/adaptive/28/user/2184111).
+- Наставник: [Ольга Тюлихова] (https://htmlacademy.ru/profile/id523263).
 
 ---
 
