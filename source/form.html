@@ -8,27 +8,27 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo">
+    <a class="header__logo logo" href="index.html">
       <img src="../images/logo.png" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть навигационное меню</span>
       </button>
       <div class="main-nav__wrapper">
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item-current">
-            <a class="main-nav__link link link-text link-text--color">главная</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">фото и видео</a>
+            <a class="main-nav__link">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">форма отзыва</a>
+            <a class="main-nav__link">форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">html academy</a>
+            <a class="main-nav__link">html academy</a>
           </li>
         </ul>
       </div>
@@ -63,8 +63,8 @@
           <legend class="form__title title">контактная информация</legend>
           <div class="form__inputs-wrapper">
             <p class="form__input-wrapper">
-              <label class="form__label label" for="phone">контактный телефон*:</label>
-              <input class="form__input input input--phone" type="phone" id="name" placeholder="Введите телефон">
+              <label class="form__label label" for="tel">контактный телефон*:</label>
+              <input class="form__input input input--tel" type="tel" id="tel" placeholder="Введите телефон">
             </p>
             <p class="form__input-wrapper">
               <label class="form__label label" for="email">электронная почта*:</label>
@@ -102,29 +102,32 @@
               <label class="form__label label label--bold" for="devils-bridge">Мост Дьявола</label>
             </p>
             <p class="form__input-wrapper">
-              <input class="form__input input input--checkbox" type="checkbox" id="bell-mountain" checked>
+              <input class="form__input input input--checkbox" type="checkbox" name="bell-mountain" id="bell-mountain"
+                checked>
               <label class="form__label label label--bold" for="bell-mountain">Гора-Колокол</label>
             </p>
             <p class="form__input-wrapper">
-              <input class="form__input input input--checkbox" type="checkbox" id="slide-park" checked>
+              <input class="form__input input input--checkbox" type="checkbox" name="slide-park" id="slide-park"
+                checked>
               <label class="form__label label label--bold" for="slide-park">Слайд-парк</label>
             </p>
             <p class="form__input-wrapper">
-              <input class="form__input input input--checkbox" type="checkbox" id="red-mountains">
+              <input class="form__input input input--checkbox" type="checkbox" name="red-mountains" id="red-mountains">
               <label class="form__label label label--bold" for="red-mountains">Красные скалы</label>
             </p>
           </div>
         </fieldset>
         <fieldset class="form__section">
-          <legend class="form__title title">опишите свои эмоции:</legend>
+          <label class="form__title title" for="review">опишите свои эмоции:</label>
           <div class="form__inputs-wrapper">
             <p class="form__input-wrapper">
-              <input class="form__input input input--text-high" type="text">
+              <textarea class="form__textarea" id="review" name="story" rows="5" cols="33">Опишите подробно все свои восторги
+            </textarea>
             </p>
           </div>
         </fieldset>
 
-        <button class="form__button button submit-button">отправить отзыв</button>
+        <button class="form__button button submit-button" type="button" type="submit">отправить отзыв</button>
         <span class="form-hint">*-обязательные поля</span>
 
       </form>

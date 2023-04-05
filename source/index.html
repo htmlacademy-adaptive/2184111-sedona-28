@@ -8,18 +8,18 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo">
+    <a class="header__logo logo" href="#">
       <img src="../images/logo.png" width="185" height="96" alt="Логотип.">
     </a>
     <nav class="main-nav">
 
-      <button class="main-nav__toggle button">
+      <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Открыть навигационное меню</span>
       </button>
       <div class="main-nav__wrapper">
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item-current">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link link link-text link-text--color">главная</a>
           </li>
           <li class="main-nav__item">
@@ -36,69 +36,68 @@
     </nav>
   </header>
   <main class="main-index">
-    <section class="main-index__hero hero">
-      <h1 class="visually-hidden">Седона.</h1>
-      <!-- <img class="main-index__hero-text" src="../images/hero-text.svg" width="282" height="214"> -->
-    </section>
-    <section class="main-index__adventages adventages">
-      <h2 class="visually-hidden">преимущества.</h2>
+    <div class="main-index__hero hero">
+      <img class="main-index__hero-text" src="../images/hero-text.svg" width="282" height="214">
+    </div>
+    <section class="main-index__adventages-section adventages-section">
       <div class="main-index__intro intro">
-        <p class="intro__slogan title">седона — небольшой городок в аризоне, заслуживающий большего!</p>
-        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h1 class="intro__slogan title">седона — небольшой городок в аризоне, заслуживающий большего!</p>
+          <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-
-      <li class="adventages__item adventage adventage--color">
-        <div class="adventage__with-image-wrappper">
-          <div class="adventage__wrapper">
-            <h3 class="adventage__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <span class="adventage__number">— №1 —</span>
-            <p class="adventage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+      <h2 class="visually-hidden">Навигация.</h2>
+      <ul class="adventages__list adventages">
+        <li class="adventages__item adventage adventage--color">
+          <div class="adventage__with-image-wrappper">
+            <div class="adventage__wrapper">
+              <h3 class="adventage__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <span class="adventage__number">— №1 —</span>
+              <p class="adventage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <img class="adventage__image" src="" width="" height="" alt=".">
           </div>
-          <img class="adventage__image" src="" width="" height="" alt=".">
-        </div>
 
-        <ul class="adventage__inner-list inner-list">
-          <li class="inner-item inner-item--hotel">
-            <h4 class="inner-item__title title">жилье</h4>
-            <p class="inner-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="inner-item inner-item--food">
-            <h4 class="inner-item__title title">еда</h4>
-            <p class="inner-item__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
-            </p>
-          </li>
-          <li class="inner-item inner-item--food">
-            <h4 class="inner-item__title title">сувениры</h4>
-            <p class="inner-item__description">Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+          <ul class="adventage__inner-list inner-list">
+            <li class="inner-item inner-item--hotel">
+              <h4 class="inner-item__title title">жилье</h4>
+              <p class="inner-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="inner-item inner-item--food">
+              <h4 class="inner-item__title title">еда</h4>
+              <p class="inner-item__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+              </p>
+            </li>
+            <li class="inner-item inner-item--food">
+              <h4 class="inner-item__title title">сувениры</h4>
+              <p class="inner-item__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
 
-      </li>
-      <li class="adventages__item adventage adventage--color">
-        <div class="adventage__with-image-wrappper adventage__with-image-wrappper--reversed">
-          <div class="adventage__wrapper">
-            <h3 class="adventage__title title">ТАМ ЕСТЬ Мост дьявола</h3>
-            <span class="adventage__number">— №2 —</span>
-            <p class="adventage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </li>
+        <li class="adventages__item adventage adventage--color">
+          <div class="adventage__with-image-wrappper adventage__with-image-wrappper--reversed">
+            <div class="adventage__wrapper">
+              <h3 class="adventage__title title">ТАМ ЕСТЬ Мост дьявола</h3>
+              <span class="adventage__number">— №2 —</span>
+              <p class="adventage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="adventages__image" src="" width="" height="" alt=".">
           </div>
-          <img class="adventages__image" src="" width="" height="" alt=".">
-        </div>
-      </li>
-      <li class="adventages__item adventage adventage--grey">
-        <h3 class="adventage__title title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-        <span class="adventage__number">— №3 —</span>
-        <p class="adventage__description">ВСЕ интересные места находятся очень близко</p>
-      </li>
-      <li class="adventages__item adventage adventage--grey">
-        <h3 class="adventage__title title">КРАСИВАЯ ДОРОГА</h3>
-        <span class="adventage__number">— №4 —</span>
-        <p class="adventage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-      </li>
-      <li class="adventages__item adventage adventage--grey">
-        <h3 class="adventage__title title">МАЛО ТУРИСТОВ</h3>
-        <span class="adventage__number">— №5 —</span>
-        <p class="adventage__description">Большинство едет в гранд каньони толпится там</p>
-      </li>
+        </li>
+        <li class="adventages__item adventage adventage--grey">
+          <h3 class="adventage__title title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <span class="adventage__number">— №3 —</span>
+          <p class="adventage__description">ВСЕ интересные места находятся очень близко</p>
+        </li>
+        <li class="adventages__item adventage adventage--grey">
+          <h3 class="adventage__title title">КРАСИВАЯ ДОРОГА</h3>
+          <span class="adventage__number">— №4 —</span>
+          <p class="adventage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        </li>
+        <li class="adventages__item adventage adventage--grey">
+          <h3 class="adventage__title title">МАЛО ТУРИСТОВ</h3>
+          <span class="adventage__number">— №5 —</span>
+          <p class="adventage__description">Большинство едет в гранд каньони толпится там</p>
+        </li>
 
       </ul>
       </div>
