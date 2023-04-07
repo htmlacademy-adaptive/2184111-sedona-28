@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+// Базовые стили
+@use "./common/fonts.scss";
+@use "./common/typography.scss";
+@use "./common/variables.scss";
+// Блоки
+@use "./blocks/page.scss";
+@use "./blocks/adventages.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/title.scss";
+@use "./blocks/inner-list.scss";
+@use "./blocks/link.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/intro.scss";
+@use "./blocks/adventage.scss";
+@use "./blocks/author.scss";
+@use "./blocks/button.scss";
+@use "./blocks/popup.scss";
+@use "./blocks/form.scss";
+@use "./blocks/label.scss";

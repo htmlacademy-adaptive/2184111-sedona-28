@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - Форма отзыва</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -19,30 +20,30 @@
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">главная</a>
+            <a class="main-nav__link title title--color">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">фото и видео</a>
+            <a class="main-nav__link title title--color">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">форма отзыва</a>
+            <a class="main-nav__link title title--color">форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">html academy</a>
+            <a class="main-nav__link title title--color">html academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-form">
-    <section class="main-form__hero hero">
-      <!-- <img class="main-index__hero-text" src="../images/hero-text.svg" width="282" height="214"> -->
+    <section class="main-form__hero hero hero--catalog">
+      <img class="main-index__hero-text" src="../images/SEDONA.svg" width="229" height="39">
     </section>
     <section class="main-form__main-section">
       <h1 class="visually-hidden">Форма отзыва.</h1>
       <div class="main-form__intro intro">
-        <span calss="intro__slogan title">Оставьте свой отзыв</span>
-        <p class="intro__description ">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <span class="intro__slogan title">Оставьте свой отзыв</span>
+        <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами достопримечательностях</p>
       </div>
       <form class="main-form__form form">
@@ -127,8 +128,21 @@
           </div>
         </fieldset>
 
-        <button class="form__button button submit-button" type="button" type="submit">отправить отзыв</button>
+        <button class="form__button button submit-button" type="button">отправить отзыв</button>
         <span class="form-hint">*-обязательные поля</span>
+
+        <div class="popup">
+          <span class="popup__name title">что-то пошло не так!</span>
+          <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="button">Ок</button>
+        </div>
+
+        <div class="popup">
+          <span class="popup__name title">ваш отзыв отправлен!</span>
+          <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+            опубликуем его на сайте.</p>
+          <button class="button">закрыть окно</button>
+        </div>
 
       </form>
     </section>
@@ -137,7 +151,7 @@
   <footer class="footer">
     <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
     <div class="footer__wrapper">
-      <a class="footer__link link link-text title">#visitSEDONA</a>
+      <a class="footer__link title">#visitSEDONA</a>
       <ul class="footer__social-list">
         <li class="footer__social-item social-item">
           <a class="social-item__link link link-icon link-icon--vk"></a>
@@ -149,7 +163,7 @@
           <a class="social-item__link link link-icon link-icon--yt"></a>
         </li>
       </ul>
-      <a class="footer__link link link-icon link-text ">Разработано</a>
+      <a class="footer__link footer__link--text">Разработано</a>
     </div>
   </footer>
 </body>

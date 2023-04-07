@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(../../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  height: 390px;
+
+  &--catalog {
+    background-image: url(../../images/hero-desktop.jpg);
+    height: 158px;
+  }
+}

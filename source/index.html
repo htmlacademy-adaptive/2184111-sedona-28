@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - главная страница</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -20,16 +21,16 @@
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link link link-text link-text--color">главная</a>
+            <a class="main-nav__link title title--color">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">фото и видео</a>
+            <a class="main-nav__link title title--color">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">форма отзыва</a>
+            <a class="main-nav__link title title--color">форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">html academy</a>
+            <a class="main-nav__link title title--color">html academy</a>
           </li>
         </ul>
       </div>
@@ -41,19 +42,20 @@
     </div>
     <section class="main-index__adventages-section adventages-section">
       <div class="main-index__intro intro">
-        <h1 class="intro__slogan title">седона — небольшой городок в аризоне, заслуживающий большего!</p>
-          <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h1 class="intro__slogan title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <h2 class="visually-hidden">Навигация.</h2>
       <ul class="adventages__list adventages">
         <li class="adventages__item adventage adventage--color">
           <div class="adventage__with-image-wrappper">
             <div class="adventage__wrapper">
-              <h3 class="adventage__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <h3 class="adventage__title title title--color">НАСТОЯЩИЙ ГОРОДОК</h3>
               <span class="adventage__number">— №1 —</span>
               <p class="adventage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <img class="adventage__image" src="" width="" height="" alt=".">
+            <img class="adventage__image" src="../images/adventage1_illustration.jpg" width="320" height="260"
+              alt="седона.">
           </div>
 
           <ul class="adventage__inner-list inner-list">
@@ -76,11 +78,12 @@
         <li class="adventages__item adventage adventage--color">
           <div class="adventage__with-image-wrappper adventage__with-image-wrappper--reversed">
             <div class="adventage__wrapper">
-              <h3 class="adventage__title title">ТАМ ЕСТЬ Мост дьявола</h3>
+              <h3 class="adventage__title title title--color">ТАМ ЕСТЬ Мост дьявола</h3>
               <span class="adventage__number">— №2 —</span>
               <p class="adventage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="adventages__image" src="" width="" height="" alt=".">
+            <img class="adventages__image" src="../images/adventage2_illustration.jpg" width="320" height="260"
+              alt="Мост дьявола.">
           </div>
         </li>
         <li class="adventages__item adventage adventage--grey">
@@ -107,16 +110,16 @@
       <span class="booking__title title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
       <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в седоне</p>
-      <a class="booking__link link link-text">найти гостиницу</a>
+      <a class="booking__link link link--text">найти гостиницу</a>
     </section>
-    <section class="main-index__map map">
+    <section class="main-index__map">
       <h2 class="visually-hidden">Карта.</h2>
-      <!-- <iframe> -->
+      <img src="../images/map-mobile.jpg.jpg" width="320" height="350" alt="карта.">
     </section>
     <footer class="footer">
       <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
       <div class="footer__wrapper">
-        <a class="footer__link link link-text">#visitSEDONA</a>
+        <a class="footer__link title">#visitSEDONA</a>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
             <a class="social-item__link link link-icon link-icon--vk"></a>
@@ -128,7 +131,7 @@
             <a class="social-item__link link link-icon link-icon--yt"></a>
           </li>
         </ul>
-        <a class="footer__link link link-icon link-text">Разработано</a>
+        <a class="footer__link footer__link--text">Разработано</a>
       </div>
     </footer>
   </main>
