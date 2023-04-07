@@ -1,0 +1,10 @@
+.footer {
+}
+
+.footer__social-list {
+  @include list-reset;
+}
+
+.footer__wrapper {
+  padding: 33px 82px;
+}

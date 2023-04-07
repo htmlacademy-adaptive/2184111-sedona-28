@@ -4,6 +4,14 @@
     background-color: $blue;
   }
   &--grey {
-    background-color: #eeeeee;
+    background-color: $gray-bg;
   }
+}
+
+.adventage__inner-list {
+  @include index-padding;
+}
+
+.adventage__wrapper {
+  @include index-padding;
 }

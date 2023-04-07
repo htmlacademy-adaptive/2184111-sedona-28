@@ -1,0 +1,10 @@
+.photos {
+}
+
+.photos__item {
+}
+
+.photos__list {
+  @include list-reset;
+  @include catalog-padding;
+}

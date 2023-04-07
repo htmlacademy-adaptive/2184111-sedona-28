@@ -3,3 +3,7 @@
 
 .main-index__map {
 }
+
+.main-index__booking {
+  @include index-padding;
+}
