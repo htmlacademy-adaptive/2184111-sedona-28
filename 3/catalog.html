@@ -5,18 +5,19 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона - каталог</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <base href="https://htmlacademy-adaptive.github.io/2184111-sedona-28/3/">
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img src="../images/logo.svg" width="185" height="96" alt="Логотип.">
+      <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть навигационное меню</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
-      </button>
       <div class="main-nav__wrapper">
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
@@ -39,7 +40,7 @@
   <main class="main-catalog">
     <section class="main-catalog__hero hero hero--catalog">
       <h1 class="visually-hidden">Каталог.</h2>
-        <img class="main-index__hero-text" src="../images/SEDONA.svg" width="229" height="39">
+        <img class="main-catalog__hero-text" src="img/sedona.svg" width="229" height="39">
     </section>
     <section class="main-catalog__photos photos">
       <div class="main-catalog__intro intro">
@@ -50,8 +51,7 @@
       <ul class="photos__list">
         <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="../images/photo-1-mobile.jpg.jpg" width="280" height="280"
-              alt="неродные просторы.">
+            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы.">
           </a>
           <h3 class="photo__title title">неродные просторы</h3>
           <p class="photo__author author">Имя автора:
@@ -61,7 +61,7 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="../images/photo-2-mobile.jpg.jpg" width="280" height="280"
+            <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="280"
               alt="Местная растительность.">
           </a>
           <h3 class="photo__title title">Местная растительность</h3>
@@ -72,8 +72,7 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="../images/photo-3-mobile.jpg.jpg" width="280" height="280"
-              alt="Дорога на север">
+            <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
           </a>
           <h3 class="photo__title title">Дорога на север</h3>
           <p class="photo__author author">Имя автора:
@@ -83,8 +82,7 @@
         </li>
         <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="../images/photo-4-desktop 1.jpg" width="280" height="280"
-              alt="Мост дьявола.">
+            <img class="photo__image" src="img/photo-4-mobile1.jpg" width="280" height="280" alt="Мост дьявола.">
           </a>
           <h3 class="photo__title title">Мост дьявола</h3>
           <p class="photo__author author">Имя автора:
@@ -102,14 +100,14 @@
           политике и экономике.</p>
       </div>
       <a class="video__link" href="/">
-        <img class="" src="../images/video-mobile.jpg.png" width="280" height="177" alt="видео.">
+        <img class="" src="img/video-mobile.jpg" width="280" height="177" alt="видео.">
       </a>
     </section>
   </main>
   <footer class="footer">
     <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
     <div class="footer__wrapper">
-      <a class="footer__link title">#visitSEDONA</a>
+      <span class="footer__link title">#visitSEDONA</span>
       <ul class="footer__social-list">
         <li class="footer__social-item social-item">
           <a class="social-item__link link link-icon link-icon--vk"></a>
