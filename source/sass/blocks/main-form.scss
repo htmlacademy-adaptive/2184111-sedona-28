@@ -1,6 +1,13 @@
 .main-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .main-form__form {
   @include catalog-padding;
+}
+
+.main-form__hero-text {
+  padding-top: 52px;
 }

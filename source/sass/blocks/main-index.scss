@@ -1,4 +1,7 @@
 .main-index {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .main-index__map {
@@ -6,4 +9,8 @@
 
 .main-index__booking {
   @include index-padding;
+}
+
+.main-index__hero-text {
+  margin-top: 90px;
 }
