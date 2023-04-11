@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+// .header__menu-toggle {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     display: none;
+//   }
+// }

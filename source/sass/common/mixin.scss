@@ -1,0 +1,15 @@
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin index-padding {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+@mixin catalog-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}

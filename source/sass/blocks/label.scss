@@ -1,0 +1,11 @@
+.label {
+  &--bold {
+    font-family: "ptsans-bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    color: #000000;
+  }
+}

@@ -1,0 +1,56 @@
+.html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .feedback {
+//   color: black;
+// }
+// .feedback ul {
+//   list-style: none;
+// }
+// .feedback p {
+//   margin-bottom: 0;
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

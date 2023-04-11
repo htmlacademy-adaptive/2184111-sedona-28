@@ -1,0 +1,18 @@
+.page {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "ptsans", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.page__body {
+}

@@ -1,0 +1,12 @@
+.title {
+  font-family: "ptsans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &--color {
+    color: #ffffff;
+  }
+}

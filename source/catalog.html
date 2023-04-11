@@ -4,40 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - каталог</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img src="../images/logo.svg" width="185" height="96" alt="Логотип.">
+      <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
     </a>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть навигационное меню</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
-      </button>
       <div class="main-nav__wrapper">
         <h2 class="visually-hidden">Навигация.</h2>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link link link-text link-text--color">главная</a>
+            <a class="main-nav__link title title--color">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">фото и видео</a>
+            <a class="main-nav__link title title--color">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">форма отзыва</a>
+            <a class="main-nav__link title title--color">форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link link-text link-text--color">html academy</a>
+            <a class="main-nav__link title title--color">html academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-catalog">
-    <section class="main-catalog__hero hero">
+    <section class="main-catalog__hero hero hero--catalog">
       <h1 class="visually-hidden">Каталог.</h2>
-        <img class="main-index__hero-text" src="../images/hero-text.svg" width="282" height="214">
+        <img class="main-catalog__hero-text" src="img/sedona.svg" width="229" height="39">
     </section>
     <section class="main-catalog__photos photos">
       <div class="main-catalog__intro intro">
@@ -46,45 +48,46 @@
           политике и экономике.</p>
       </div>
       <ul class="photos__list">
-        <li class="photos-item photo">
+        <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="" width="" height="" alt="">
+            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы.">
           </a>
-          <h3 class="photo__title">неродные просторы</h3>
+          <h3 class="photo__title title">неродные просторы</h3>
           <p class="photo__author author">Имя автора:
             <span class="author__name">Борис</span>
           </p>
-          <span class="photo__likes-amount">1350</span>
+          <span class="photo__likes-amount title">1350</span>
         </li>
-        <li class="photos-item photo">
+        <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="" width="" height="" alt="">
+            <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="280"
+              alt="Местная растительность.">
           </a>
-          <h3 class="photo__title">Местная растительность</h3>
+          <h3 class="photo__title title">Местная растительность</h3>
           <p class="photo__author author">Имя автора:
             <span class="author__name">Сергей</span>
           </p>
-          <span class="photo__likes-amount">143</span>
+          <span class="photo__likes-amount title">143</span>
         </li>
-        <li class="photos-item photo">
+        <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="" width="" height="" alt="">
+            <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
           </a>
-          <h3 class="photo__title">Дорога на север</h3>
+          <h3 class="photo__title title">Дорога на север</h3>
           <p class="photo__author author">Имя автора:
             <span class="author__name">Пётр</span>
           </p>
-          <span class="photo__likes-amount">96</span>
+          <span class="photo__likes-amount title">96</span>
         </li>
-        <li class="photos-item photo">
+        <li class="photos__item photo">
           <a class="photo__link">
-            <img class="photo__image" src="" width="" height="" alt="">
+            <img class="photo__image" src="img/photo-4-mobile1.jpg" width="280" height="280" alt="Мост дьявола.">
           </a>
-          <h3 class="photo__title">Мост дьявола</h3>
+          <h3 class="photo__title title">Мост дьявола</h3>
           <p class="photo__author author">Имя автора:
             <span class="author__name">Антон</span>
           </p>
-          <span class="photo__likes-amount">254</span>
+          <span class="photo__likes-amount title">254</span>
         </li>
       </ul>
     </section>
@@ -96,14 +99,14 @@
           политике и экономике.</p>
       </div>
       <a class="video__link" href="/">
-        <img class="" src="">
+        <img class="" src="img/video-mobile.jpg" width="280" height="177" alt="видео.">
       </a>
     </section>
   </main>
   <footer class="footer">
     <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
     <div class="footer__wrapper">
-      <a class="footer__link title">#visitSEDONA</a>
+      <span class="footer__link title">#visitSEDONA</span>
       <ul class="footer__social-list">
         <li class="footer__social-item social-item">
           <a class="social-item__link link link-icon link-icon--vk"></a>
@@ -115,7 +118,7 @@
           <a class="social-item__link link link-icon link-icon--yt"></a>
         </li>
       </ul>
-      <a class="footer__link footer__link-text">Разработано</a>
+      <a class="footer__link footer__link--text">Разработано</a>
     </div>
   </footer>
 </body>
