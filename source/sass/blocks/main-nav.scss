@@ -1,13 +1,21 @@
 .main-nav {
   display: flex;
-  position: relative;
   z-index: 2;
   min-height: 56px;
   justify-content: space-around;
+  background-color: #81b3d2;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 320px;
 
   @media (min-width: 768px) {
+    position: relative;
     z-index: 0;
+    background-color: #ffffff;
   }
+
   @media (min-width: 1200px) {
     z-index: 0;
   }
@@ -27,14 +35,21 @@
 }
 
 .main-nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
   @include list-reset;
 
   @media (min-width: 768px) {
-    display: flex;
+    flex-direction: row;
+    gap: 100px;
   }
 
   @media (min-width: 1200px) {
-    display: flex;
+    gap: 220px;
   }
 }
 

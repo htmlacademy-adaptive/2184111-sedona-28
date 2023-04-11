@@ -13,3 +13,14 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@mixin catalog-padding-tablet {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@mixin fieldset-reset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

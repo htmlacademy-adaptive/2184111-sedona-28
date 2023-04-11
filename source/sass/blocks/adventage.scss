@@ -10,8 +10,30 @@
 
 .adventage__inner-list {
   @include index-padding;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .adventage__wrapper {
   @include index-padding;
 }
+
+.adventage__with-image-wrappper {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+// .adventages__row-wrapper {
+// }

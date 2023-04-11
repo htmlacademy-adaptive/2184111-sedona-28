@@ -8,3 +8,35 @@
   @include list-reset;
   @include catalog-padding;
 }
+
+.photos__item {
+}
+
+.photos__wrapper {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 33.33%);
+  }
+}
+
+.photos__item {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    &:nth-child(odd) {
+      background-color: $soft-gray;
+    }
+    &:nth-child(even) {
+      background-color: $gray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 33.33%);
+  }
+}
