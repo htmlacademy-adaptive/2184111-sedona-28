@@ -24,3 +24,9 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin flex-centring-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

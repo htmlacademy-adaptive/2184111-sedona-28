@@ -7,11 +7,12 @@
 }
 
 .footer__wrapper {
+  @include flex-centring-column;
   padding: 33px 82px;
-  display: block;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 

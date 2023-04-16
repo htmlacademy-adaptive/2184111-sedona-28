@@ -7,20 +7,28 @@
 .photos__list {
   @include list-reset;
   @include catalog-padding;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .photos__item {
 }
 
-.photos__wrapper {
+.photos__inner-list {
   display: block;
+  @include list-reset;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -38,5 +46,14 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 33.33%);
+  }
+}
+
+.photo__name-wrapper {
+  @media (min-width: $tablet-width) {
+    // padding: 22px auto 15px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }

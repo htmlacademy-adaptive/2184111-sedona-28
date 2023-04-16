@@ -1,3 +1,18 @@
 .adventages {
   @include list-reset;
 }
+
+.adventages__inner-list {
+  @include list-reset;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}

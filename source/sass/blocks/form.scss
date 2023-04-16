@@ -19,3 +19,11 @@
   @include fieldset-reset;
   border-top: 1px solid $soft-gray;
 }
+
+.form__button-wrapper {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

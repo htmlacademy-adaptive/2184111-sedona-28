@@ -5,8 +5,29 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 
   &--color {
     color: #ffffff;
+  }
+
+  &--photos {
+    text-align: left;
+
+    // @media (min-width: $tablet-width) {
+    //   text-align: center;
+    // }
+  }
+
+  &--left {
+    text-align: left;
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
   }
 }
