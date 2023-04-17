@@ -3,8 +3,19 @@
 
 .footer__social-list {
   @include list-reset;
+  display: flex;
 }
 
 .footer__wrapper {
+  @include flex-centring-column;
   padding: 33px 82px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }

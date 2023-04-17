@@ -1,4 +1,20 @@
 .page {
+  // width: 320px;
+  // margin: 0 auto;
+  // font-family: "ptsans", sans-serif;
+
+  // @media (min-width: $tablet-width) {
+  //   width: $tablet-width;
+  //   margin: 0 auto;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: $desktop-width;
+  //   margin: 0 auto;
+  // }
+}
+
+.page__container {
   width: 320px;
   margin: 0 auto;
   font-family: "ptsans", sans-serif;
@@ -14,5 +30,20 @@
   }
 }
 
+.page__header {
+}
+
 .page__body {
+}
+
+.page__adventages {
+  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin-bottom: 60px;
+  }
 }

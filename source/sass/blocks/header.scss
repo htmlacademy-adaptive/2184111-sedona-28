@@ -1,12 +1,12 @@
 .header {
   position: relative;
+  min-height: 56px;
 
   @media (min-width: $tablet-width) {
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
   }
 }
 
@@ -17,12 +17,14 @@
   transform: translate(-50%, 0);
 }
 
-// .header__menu-toggle {
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
+.header__menu-toggle {
+  display: flex;
+  margin-left: auto;
 
-//   @media (min-width: $desktop-width) {
-//     display: none;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}

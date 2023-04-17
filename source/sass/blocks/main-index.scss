@@ -8,9 +8,30 @@
 }
 
 .main-index__booking {
-  @include index-padding;
+  // @include index-padding;
+  margin-bottom: 49px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .main-index__hero-text {
-  margin-top: 90px;
+  // margin-top: 90px;
+}
+
+.main-index__intro {
+  @include index-padding;
+  padding-top: 32px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  @media (min-width: $desktop-width) {
+    // padding: 59px 358px 44px 358px;
+  }
 }

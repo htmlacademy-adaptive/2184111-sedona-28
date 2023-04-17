@@ -3,3 +3,44 @@
   background-color: #eeeeee;
   color: #333333;
 }
+
+.inner-item {
+  width: 100%;
+  // margin-bottom: 25px;
+  padding: 24px 18px;
+
+  @media (min-width: $tablet-width) {
+    width: $adventage-tablet;
+    height: $adventage-tablet;
+    margin-bottom: 0;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $adventage-desktop;
+    height: $adventage-desktop-height;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.inner-item__description {
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.inner-item__title {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}

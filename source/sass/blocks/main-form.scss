@@ -6,8 +6,34 @@
 
 .main-form__form {
   @include catalog-padding;
+
+  @media (min-width: $tablet-width) {
+    // display: flex;
+
+    @include catalog-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .main-form__hero-text {
   padding-top: 52px;
+}
+
+.main-form__row-wrapper {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.main-form__intro {
+  @media (min-width: $tablet-width) {
+    padding-left: 166px;
+    padding-right: 166px;
+  }
 }

@@ -3,3 +3,28 @@
   flex-direction: column;
   flex-grow: 1;
 }
+
+.main-catalog__intro {
+  @include index-padding;
+
+  @media (min-width: $tablet-width) {
+    @include catalog-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 0, 370px;
+    padding-left: 370px;
+    padding-right: 370px;
+  }
+}
+
+.main-catalog__hero-text {
+  padding-top: 52px;
+  @media (min-width: $tablet-width) {
+    // padding-top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 103px;
+  }
+}
