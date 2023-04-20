@@ -14,8 +14,9 @@
       <a class="header__logo logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
       </a>
-      <button class="header__menu-toggle button" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
+      <button class="header__menu-toggle button button--burger" type="button"><span class="visually-hidden">Открыть
+          навигационное
+          меню</span>
       </button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -52,45 +53,45 @@
           <div class="main-form__row-wrapper">
             <fieldset class="form__section">
               <legend class="form__title title">представьтесь</legend>
-              <!-- <div class="form__inputs-wrapper"> -->
-              <p class="form__input-wrapper">
+
+              <p class="form__input-wrapper form__input-wrapper--left">
                 <label class="form__label label" for="name">имя*:</label>
                 <input class="form__input input" type="text" id="second-name" placeholder="Пустота">
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--left">
                 <label class="form__label label" for="third-name">отчество:</label>
                 <input class="form__input input" type="text" id="third-name" placeholder="Викторович">
               </p>
-              <!-- </div> -->
+
             </fieldset>
             <fieldset class="form__section">
               <legend class="form__title title">контактная информация</legend>
-              <!-- <div class="form__inputs-wrapper"> -->
-              <p class="form__input-wrapper">
+
+              <p class="form__input-wrapper form__input-wrapper--tel form__input-wrapper--right">
                 <label class="form__label label" for="tel">контактный телефон*:</label>
                 <input class="form__input input input--tel" type="tel" id="tel" placeholder="Введите телефон">
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--email form__input-wrapper--right">
                 <label class="form__label label" for="email">электронная почта*:</label>
                 <input class="form__input input input--email" type="text" id="email" placeholder="Введите e-mail">
               </p>
-              <!-- </div> -->
+
             </fieldset>
           </div>
           <fieldset class="form__section">
             <legend class="form__title title">общее впечатление:</legend>
             <div class="form__inputs-wrapper">
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--radio" name="radio-button" type="radio" id="radio-positive"
                   value="positive-reaction">
                 <label class="form__label label label--bold" for="radio-positive">Скорее положительное</label>
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--radio" name="radio-button" type="radio" id="radio-nagative"
                   value="negative-reaction">
                 <label class="form__label label label--bold" for="radio-nagative">Скорее отрицательное</label>
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--radio" name="radio-button" type="radio" id="radio-ambivalent"
                   value="ambivalent-reaction">
                 <label class="form__label label label--bold" for="radio-ambivalent">Затрудняюсь ответить</label>
@@ -100,23 +101,23 @@
 
           <fieldset class="form__section">
             <legend class="form__title title">посещенные достопримечательности:</legend>
-            <div class="form__inputs-wrapper">
-              <p class="form__input-wrapper">
+            <div class="form__inputs-wrapper form__inputs-wrapper--centred">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--checkbox" type="checkbox" name="devils-bridge" id="devils-bridge"
                   checked>
                 <label class="form__label label label--bold" for="devils-bridge">Мост Дьявола</label>
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--checkbox" type="checkbox" name="bell-mountain" id="bell-mountain"
                   checked>
                 <label class="form__label label label--bold" for="bell-mountain">Гора-Колокол</label>
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox">
                 <input class="form__input input input--checkbox" type="checkbox" name="slide-park" id="slide-park"
                   checked>
                 <label class="form__label label label--bold" for="slide-park">Слайд-парк</label>
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--checkbox ">
                 <input class="form__input input input--checkbox" type="checkbox" name="red-mountains"
                   id="red-mountains">
                 <label class="form__label label label--bold" for="red-mountains">Красные скалы</label>
@@ -125,9 +126,9 @@
           </fieldset>
           <fieldset class="form__section">
             <label class="form__title title" for="review">опишите свои эмоции:</label>
-            <div class="form__inputs-wrapper">
+            <div class="form__textarea-wrapper">
               <p class="form__input-wrapper">
-                <textarea class="form__textarea" id="review" name="story" rows="5" cols="28">Опишите подробно все свои восторги
+                <textarea class="form__textarea" id="review" name="story" rows="5" cols="33">Опишите подробно все свои восторги
             </textarea>
               </p>
             </div>
@@ -153,22 +154,33 @@
       </section>
     </main>
 
-    <footer class=" footer">
+    <footer class="page__footer footer">
       <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
       <div class="footer__wrapper">
         <span class="footer__link title">#visitSEDONA</span>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--vk">vk</a>
+            <a class="social-item__link link link-icon link-icon--vk"><span
+                class="visually-hidden">Вконтакте.</span></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--tg">tg</a>
+            <a class="social-item__link link link-icon link-icon--tg">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--yt">yt</a>
+            <a class="social-item__link link link-icon link-icon--yt">
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
           </li>
         </ul>
-        <a class="footer__link footer__link--text">Разработано</a>
+
+        <a class="footer__link footer__link--text">Разработано
+          <svg class="footer__html-logo" width="28" height="36" fill="none" viewBox="0 0 28 36">
+            <path fill="currentColor"
+              d="M13.8 1 .1 2.2v24.8l13.5 8 13.4-8V2.3L13.8 1Zm11.4 12L13.7 6.3l-.2-.2v.1l-11.4 7V4l11.5-1.3L25.2 4v9ZM13.6 7.8l11.5 6.7-4.5 2.7-7-4.3v1.4l5.8 3.6-.9.4-5-3v1.4l3.8 2.3-.8.6-3-1.9V19l2 1.1-1.9 1.1-11.4-6.6 11.4-6.9ZM2.1 16.1l11.4 6.8v1L5.6 19v1.4l8 4.9v1l-8-4.6V23l8 4.8 8.1-4.8v-5.3l3.4-2v10l-11.5 7L2.1 26V16Z" />
+          </svg></a>
+
       </div>
     </footer>
   </div>

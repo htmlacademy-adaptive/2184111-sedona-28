@@ -8,6 +8,18 @@
 
   @media (min-width: $desktop-width) {
   }
+
+  &--nojs {
+    .header__menu-toggle {
+      display: none;
+    }
+    .main-nav {
+      @media (max-width: $mobile-width-only) {
+        display: block;
+        position: static;
+      }
+    }
+  }
 }
 
 .header__logo {
@@ -18,8 +30,9 @@
 }
 
 .header__menu-toggle {
-  display: flex;
-  margin-left: auto;
+  margin-left: 270px;
+  margin-top: 13px;
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
     display: none;

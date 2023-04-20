@@ -14,8 +14,9 @@
       <a class="header__logo logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
       </a>
-      <button class="header__menu-toggle button" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
+      <button class="header__menu-toggle button button--burger" type="button"><span class="visually-hidden">Открыть
+          навигационное
+          меню</span>
       </button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -40,7 +41,8 @@
     <main class="main-catalog">
       <section class="main-catalog__hero hero hero--catalog">
         <h1 class="visually-hidden">Каталог.</h2>
-          <img class="main-catalog__hero-text" src="img/sedona.svg" width="229" height="39">
+          <img class="main-catalog__hero-text main-catalog__hero-text--catalog" src="img/sedona.svg" width="229"
+            height="39">
       </section>
       <section class="main-catalog__photos photos">
         <div class="main-catalog__intro intro">
@@ -60,7 +62,10 @@
                   <span class="author__name">Борис</span>
                 </p>
               </div>
-              <span class="photo__likes-amount title">1350</span>
+              <div class="photo__likes-amount-wrapper">
+                <div class="photo__like-icon-placeholder"></div>
+                <span class="photo__likes-amount title title--photos">1350</span>
+              </div>
             </div>
           </li>
           <li>
@@ -77,7 +82,10 @@
                       <span class="author__name">Сергей</span>
                     </p>
                   </div>
-                  <span class="photo__likes-amount title">143</span>
+                  <div class="photo__likes-amount-wrapper">
+                    <div class="photo__like-icon-placeholder"></div>
+                    <span class="photo__likes-amount title title--photos">143</span>
+                  </div>
                 </div>
               </li>
               <li class="photos__item photo">
@@ -91,7 +99,10 @@
                       <span class="author__name">Пётр</span>
                     </p>
                   </div>
-                  <span class="photo__likes-amount title">96</span>
+                  <div class="photo__likes-amount-wrapper">
+                    <div class="photo__like-icon-placeholder"></div>
+                    <span class="photo__likes-amount title title--photos">96</span>
+                  </div>
                 </div>
               </li>
               <li class="photos__item photo">
@@ -105,7 +116,10 @@
                       <span class="author__name">Антон</span>
                     </p>
                   </div>
-                  <span class="photo__likes-amount title">254</span>
+                  <div class="photo__likes-amount-wrapper">
+                    <div class="photo__like-icon-placeholder"></div>
+                    <span class="photo__likes-amount title title--photos">254</span>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -113,8 +127,8 @@
         </ul>
       </section>
       <section class="main-catalog__video video">
-        <div class="main-catalog__intro intro">
-          <h2 class="intro__title title">Все еще сомневаетесь?</h2>
+        <div class="main-catalog__intro main-catalog__intro--bottom intro">
+          <h2 class="intro__title title title--bold">Все еще сомневаетесь?</h2>
           <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной
             раз!</p>
@@ -130,16 +144,20 @@
         <span class="footer__link title">#visitSEDONA</span>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--vk">vk</a>
+            <a class="social-item__link link link-icon link-icon--vk"></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--tg">tg</a>
+            <a class="social-item__link link link-icon link-icon--tg"></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--yt">yt</a>
+            <a class="social-item__link link link-icon link-icon--yt"></a>
           </li>
         </ul>
-        <a class="footer__link footer__link--text">Разработано</a>
+        <a class="footer__link footer__link--text">Разработано <svg class="footer__html-logo" width="28" height="36"
+            fill="none" viewBox="0 0 28 36">
+            <path fill="currentColor"
+              d="M13.8 1 .1 2.2v24.8l13.5 8 13.4-8V2.3L13.8 1Zm11.4 12L13.7 6.3l-.2-.2v.1l-11.4 7V4l11.5-1.3L25.2 4v9ZM13.6 7.8l11.5 6.7-4.5 2.7-7-4.3v1.4l5.8 3.6-.9.4-5-3v1.4l3.8 2.3-.8.6-3-1.9V19l2 1.1-1.9 1.1-11.4-6.6 11.4-6.9ZM2.1 16.1l11.4 6.8v1L5.6 19v1.4l8 4.9v1l-8-4.6V23l8 4.8 8.1-4.8v-5.3l3.4-2v10l-11.5 7L2.1 26V16Z" />
+          </svg></a>
       </div>
     </footer>
   </div>

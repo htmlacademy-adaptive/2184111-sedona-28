@@ -33,8 +33,11 @@
 }
 
 .photos__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
   @media (min-width: $tablet-width) {
     display: grid;
+    padding: 0;
     grid-template-columns: repeat(2, 50%);
     &:nth-child(odd) {
       background-color: $soft-gray;
@@ -45,11 +48,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     grid-template-columns: repeat(3, 33.33%);
   }
 }
 
 .photo__name-wrapper {
+  margin-bottom: 11px;
+  padding-top: 15px;
   @media (min-width: $tablet-width) {
     // padding: 22px auto 15px 20px;
   }

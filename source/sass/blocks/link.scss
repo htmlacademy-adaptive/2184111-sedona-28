@@ -8,3 +8,57 @@
   display: block;
   width: 100%;
 }
+
+.link-icon {
+  background-repeat: no-repeat;
+  // background-color: #81b3d2;
+  background-position: center;
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+
+  &--vk::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-image: url("../img/vk.svg");
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+
+  &--tg::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/tg.svg");
+    width: 21px;
+    height: 17px;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+
+  &--yt::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/yt.svg");
+    width: 20px;
+    height: 14px;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+}

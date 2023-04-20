@@ -1,6 +1,6 @@
 .main-nav {
   display: none;
-  display: flex;
+  // display: flex;
   z-index: 2;
   min-height: 56px;
   justify-content: space-around;
@@ -32,6 +32,9 @@
   background-color: $blue;
   padding: 2px 40px;
   line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  display: block;
 
   @media (min-width: 768px) {
     color: #000000;
@@ -109,4 +112,8 @@
   @media (min-width: $tablet-width) {
     margin-left: auto;
   }
+}
+
+.main-nav__item {
+  min-height: 55px;
 }

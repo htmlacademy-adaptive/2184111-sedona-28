@@ -10,11 +10,12 @@
 
 <body class="body page__header">
   <div class="page__container">
-    <header class="header page__header">
+    <header class="header page__header header--nojs">
       <a class="header__logo logo" href="#">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
       </a>
-      <button class="header__menu-toggle button" type="button"> <span class="visually-hidden">Открыть навигационное
+      <button class="header__menu-toggle button button--burger" type="button"><span class="visually-hidden">Открыть
+          навигационное
           меню</span>
       </button>
       <nav class="main-nav">
@@ -61,16 +62,25 @@
 
             <ul class="adventage__inner-list inner-list">
               <li class="inner-item inner-item--hotel">
-                <h4 class="inner-item__title title title--left">жилье</h4>
+                <div class="inner-list__icon-group">
+                  <div class="inner-list__icon inner-list__icon--hotel"></div>
+                  <h4 class="inner-item__title title title--left">жилье</h4>
+                </div>
                 <p class="inner-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="inner-item inner-item--food">
-                <h4 class="inner-item__title title title--left">еда</h4>
+                <div class="inner-list__icon-group">
+                  <div class="inner-list__icon inner-list__icon--burger"></div>
+                  <h4 class="inner-item__title title title--left">еда</h4>
+                </div>
                 <p class="inner-item__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                 </p>
               </li>
               <li class="inner-item inner-item--food">
-                <h4 class="inner-item__title title title--left">сувениры</h4>
+                <div class="inner-list__icon-group">
+                  <div class="inner-list__icon inner-list__icon--present"></div>
+                  <h4 class="inner-item__title title title--left">сувениры</h4>
+                </div>
                 <p class="inner-item__description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -127,7 +137,10 @@
       </section>
       <section class="main-index__map">
         <h2 class="visually-hidden">Карта.</h2>
-        <img src="img/map-mobile.jpg" width="320" height="350" alt="карта.">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939493.651906778!2d-112.49384384456822!3d34.968970980515046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681745768317!5m2!1sru!2sru"
+          width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="page__footer footer">
@@ -136,16 +149,27 @@
         <span class="footer__link title">#visitSEDONA</span>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--vk">vk</a>
+            <a class="social-item__link link link-icon link-icon--vk"><span
+                class="visually-hidden">Вконтакте.</span></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--tg">tg</a>
+            <a class="social-item__link link link-icon link-icon--tg">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--yt">yt</a>
+            <a class="social-item__link link link-icon link-icon--yt">
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
           </li>
         </ul>
-        <a class="footer__link footer__link--text">Разработано</a>
+
+        <a class="footer__link footer__link--text">Разработано
+          <svg class="footer__html-logo" width="28" height="36" fill="none" viewBox="0 0 28 36">
+            <path fill="currentColor"
+              d="M13.8 1 .1 2.2v24.8l13.5 8 13.4-8V2.3L13.8 1Zm11.4 12L13.7 6.3l-.2-.2v.1l-11.4 7V4l11.5-1.3L25.2 4v9ZM13.6 7.8l11.5 6.7-4.5 2.7-7-4.3v1.4l5.8 3.6-.9.4-5-3v1.4l3.8 2.3-.8.6-3-1.9V19l2 1.1-1.9 1.1-11.4-6.6 11.4-6.9ZM2.1 16.1l11.4 6.8v1L5.6 19v1.4l8 4.9v1l-8-4.6V23l8 4.8 8.1-4.8v-5.3l3.4-2v10l-11.5 7L2.1 26V16Z" />
+          </svg></a>
+
       </div>
     </footer>
   </div>

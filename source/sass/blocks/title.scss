@@ -8,16 +8,21 @@
   margin: 0;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   &--color {
     color: #ffffff;
   }
 
   &--photos {
     text-align: left;
+    margin-bottom: 8px;
 
-    // @media (min-width: $tablet-width) {
-    //   text-align: center;
-    // }
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 
   &--left {
@@ -27,7 +32,14 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 21px;
+  }
+
+  &--bold {
+    font-size: 21px;
+    @media (min-width: $tablet-width) {
+      font-size: 31px;
+    }
   }
 }

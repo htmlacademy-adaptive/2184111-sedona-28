@@ -8,13 +8,16 @@
   width: 100%;
   // margin-bottom: 25px;
   padding: 24px 18px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: $adventage-tablet;
-    height: $adventage-tablet;
+    height: 330px;
     margin-bottom: 0;
     padding-left: 33px;
     padding-right: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,25 +25,95 @@
     height: $adventage-desktop-height;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+}
+
+.inner-item--hotel {
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
+  // width: 40px;
+  // height: 40px;
+  // display: inline-block;
+  // background-image: url("../img/house.svg");
 }
 
 .inner-item__description {
   margin: 0;
   text-align: left;
+  padding-left: 48px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    padding-left: 0;
   }
 }
 
 .inner-item__title {
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
+  }
+}
+
+.inner-list__icon-group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+.inner-list__icon {
+  // display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+
+  &--hotel::before {
+    content: url("../img/house.svg");
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+
+  &--burger::before {
+    content: url("../img/burger.svg");
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+
+  &--present::before {
+    content: url("../img/gift.svg");
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    object-fit: contain;
   }
 }

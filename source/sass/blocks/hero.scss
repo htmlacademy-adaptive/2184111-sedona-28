@@ -3,6 +3,8 @@
   background-repeat: no-repeat;
   padding: 90px 19px 85px 19px;
   text-align: center;
+  position: relative;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet.jpg");
@@ -17,6 +19,7 @@
   &--catalog {
     background-image: url("../img/back-form.jpg");
     padding: 52px 40px 67px 40px;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/hero-tablet.jpg");
@@ -28,5 +31,39 @@
       padding: 101px 370px 120px 370px;
       background-position: center;
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/intro-frame-small.svg);
+    background-repeat: no-repeat;
+    display: block;
+    top: 84.2%;
+    left: 0;
+    width: 320px;
+    height: 57px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url(../img/intro-frame-medium.svg);
+      top: 85.4%;
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url(../img/hero-triangle.svg);
+      width: 1200px;
+    }
+  }
+}
+
+.hero--catalog::after {
+  top: 65.7%;
+  @media (min-width: $tablet-width) {
+    top: 78.3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 78.5%;
   }
 }
