@@ -40,10 +40,10 @@
   }
 }
 
-.button--burger:focus-within::after {
-  background-image: url("../img/icon-cross.svg");
-}
+// .button--burger:focus-within::after {
+//   background-image: url("../img/icon-cross.svg");
+// }
 
-.button--burger:focus-within + .main-nav {
-  display: block;
-}
+// .button--burger:focus-within + .main-nav {
+//   display: block;
+// }

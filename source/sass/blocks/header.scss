@@ -1,12 +1,41 @@
 .header {
-  position: relative;
-  min-height: 56px;
-
-  @media (min-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     position: relative;
-  }
+    min-height: 56px;
 
-  @media (min-width: $desktop-width) {
+    &--menu-closed .header__main-nav {
+      display: none;
+    }
+
+    &--menu-closed .button--burger {
+      display: block;
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      color: $blue;
+      background-color: transparent;
+      z-index: 3;
+    }
+
+    &--menu-closed .button--burger::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/burger-menu.svg");
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px;
+      background-position: center;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+    }
+
+    &--menu-opened .header__main-nav {
+      display: block;
+    }
+
+    &--menu-opened .button--burger::after {
+      background-image: url("../img/icon-cross.svg");
+    }
   }
 
   &--nojs {
@@ -17,8 +46,19 @@
       @media (max-width: $mobile-width-only) {
         display: block;
         position: static;
+        transform: translate(0px, 0px);
       }
     }
+    & img {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
 
@@ -30,9 +70,11 @@
 }
 
 .header__menu-toggle {
-  margin-left: 270px;
-  margin-top: 13px;
-  padding: 15px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;

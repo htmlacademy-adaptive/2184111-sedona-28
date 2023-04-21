@@ -4,7 +4,7 @@
   padding: 90px 19px 85px 19px;
   text-align: center;
   position: relative;
-  background-position: center;
+  // background-position: center;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet.jpg");
@@ -46,7 +46,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url(../img/intro-frame-medium.svg);
-      top: 85.4%;
+      top: 85.6%;
       width: 768px;
     }
 
