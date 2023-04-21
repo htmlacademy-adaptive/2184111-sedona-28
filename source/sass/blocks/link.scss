@@ -7,6 +7,18 @@
   background-color: #81b3d2;
   display: block;
   width: 100%;
+
+  &:hover {
+    @include blue-hover-style;
+  }
+
+  &:active {
+    @include blue-active-style;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .link-icon {

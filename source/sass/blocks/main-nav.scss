@@ -35,13 +35,32 @@
   padding-top: 17px;
   padding-bottom: 12px;
   display: block;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+  @media (max-width: $mobile-width-only) {
+    &:hover {
+      @include blue-hover-style;
+    }
+    &:active {
+      @include blue-active-style;
+    }
+  }
 
   @media (min-width: 768px) {
+    box-shadow: none;
     color: #000000;
     background-color: #ffffff;
     padding: 17px 27px;
     font-size: 14px;
     line-height: 21px;
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b3b3b3;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -143,5 +162,11 @@
     &:last-child {
       border-bottom: none;
     }
+  }
+}
+
+.main-nav__item--current a {
+  @media (min-width: $tablet-width) {
+    color: $brown;
   }
 }

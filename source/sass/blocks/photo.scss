@@ -4,6 +4,8 @@
 }
 
 .photo__likes-amount {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .photo__link {
@@ -57,16 +59,6 @@
     width: 100%;
     top: 100%;
     transform: translateY(-100%);
-
-    // &::after {
-    //   content: "";
-    //   width: 100%;
-    //   height: 100%;
-    //   background-color: #000000;
-    //   opacity: 0.3;
-    //   top: 100%;
-    //   transform: translateY(-100%);
-    // }
   }
 }
 
@@ -81,16 +73,12 @@
   gap: 9px;
 }
 
-.photo__like-icon-placeholder {
-  width: 23px;
-  height: 21px;
-  position: relative;
+.photo__like-icon {
+  color: #000000;
+  opacity: 0.3;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/like-icon.svg");
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    opacity: 1;
   }
 }

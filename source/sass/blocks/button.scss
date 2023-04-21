@@ -7,14 +7,29 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 
-  &--submit {
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      width: 50%;
-    }
+  &:hover {
+    @include blue-hover-style;
   }
+  &:active {
+    @include blue-active-style;
+  }
+
+  // &--submit {
+  //   width: 100%;
+
+  //   @media (min-width: $tablet-width) {
+  //     width: 50%;
+  //   }
+
+  //   &:hover {
+  //     @include blue-hover-style;
+  //   }
+  //   &:active {
+  //     @include blue-active-style;
+  //   }
+  // }
   @media (min-width: $desktop-width) {
     width: 384px;
   }

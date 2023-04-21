@@ -19,6 +19,7 @@
   &--photos {
     text-align: left;
     margin-bottom: 8px;
+    font-size: 14px;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
@@ -33,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 21px;
+    // font-size: 21px;
   }
 
   &--bold {

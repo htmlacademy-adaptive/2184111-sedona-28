@@ -31,6 +31,14 @@
 .footer__link {
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__html-academy-link {
