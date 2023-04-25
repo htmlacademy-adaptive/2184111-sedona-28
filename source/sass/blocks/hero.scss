@@ -1,58 +1,73 @@
 .hero {
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  padding: 90px 19px 85px 19px;
+  padding: 90px 19px 78px 19px;
   text-align: center;
   position: relative;
+  background-color: #000000;
   // background-position: center;
 
+  @media (max-width: $mobile-width-only) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 320px auto;
+      background-position: 50% 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/hero-tablet.jpg");
-    padding: 77px 153px 91px 153px;
+    background-image: url("../img/hero-desktop.jpg");
+    padding: 77px 153px 87px 153px;
+    background-size: 1200px auto;
+    background-position: 50% 0;
+    background-color: #000000;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-position: 50% 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero-desktop.jpg");
-    padding: 78px 370px 90px 370px;
+    padding: 77px 370px 87px 370px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-position: 50% 0;
+    }
   }
 
-  &--catalog {
-    background-image: url("../img/back-form.jpg");
+  &--inner-page {
     padding: 52px 40px 67px 40px;
-    background-position: center;
+    background-position: 50% 100%;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/hero-tablet.jpg");
       padding: 95px 147px 117px 147px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/hero-desktop.jpg");
-      padding: 101px 370px 120px 370px;
-      background-position: center;
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    background-image: url(../img/intro-frame-small.svg);
+    background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
     display: block;
-    top: 84.2%;
+    bottom: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 57px;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
-      background-image: url(../img/intro-frame-medium.svg);
-      top: 85.6%;
-      width: 768px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url(../img/hero-triangle.svg);
-      width: 1200px;
     }
   }
 }

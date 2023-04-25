@@ -4,7 +4,77 @@
   flex-grow: 1;
 }
 
+.main-index__map-marker {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 44%;
+
+  @media (min-width: $tablet-width) {
+    top: 44%;
+    left: 48%;
+  }
+  @media (min-width: $desktop-width) {
+    top: 45%;
+    left: 48%;
+  }
+}
+
 .main-index__map {
+  &--nojs {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      background-color: #81b3d2;
+      border: 6px solid #ffffff;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--nojs .main-index__map-marker {
+    display: block;
+  }
+
+  & .main-index__map-img {
+    display: none;
+  }
+
+  &--nojs .main-index__map-iframe {
+    display: none;
+  }
+
+  &--nojs .main-index__map-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    // @media (max-width: $mobile-width-only) {
+    //   @media (min-resolution: 2dppx) {
+    //     image: url("img/map-mobile@2x.jpg.");
+    //   }
+    // }
+    // @media (min-width: $tablet-width) {
+    //   @media (min-resolution: 2dppx) {
+    //     image: url("img/map-mobile@2x.jpg.");
+    //   }
+    // }
+    // @media (min-width: $desktop-width) {
+    //   @media (min-resolution: 2dppx) {
+    //     image: url("img/map-mobile@2x.jpg.");
+    //   }
+    // }
+  }
+}
+
+.main-index__map-iframe {
+  width: 100%;
 }
 
 .main-index__booking {
@@ -33,5 +103,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 59px 358px 44px 358px;
+  }
+}
+
+.main-index__hero-text {
+  // padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 459px;
+    padding-top: 0;
   }
 }

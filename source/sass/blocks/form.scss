@@ -124,11 +124,15 @@
 }
 
 .form__button-wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 22px;
+  align-items: end;
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 64px;
   }
 
@@ -144,6 +148,7 @@
   min-height: 118px;
   resize: vertical;
   background-color: $soft-gray;
+  font-family: inherit;
 
   @media (min-width: $tablet-width) {
     min-height: 160px;
@@ -171,4 +176,31 @@
 .form__textarea-wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.form-hint {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.form__input-checkbox[type="checkbox"]:checked + .input--checkbox::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick.svg");
+  width: 22px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-3px);
+}
+
+.form__input-radio-checkbox[type="radio"]:checked + .input--radio::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 100vh;
 }

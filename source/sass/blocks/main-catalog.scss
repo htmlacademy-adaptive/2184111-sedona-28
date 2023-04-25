@@ -28,13 +28,12 @@
 }
 
 .main-catalog__hero-text {
-  // padding-top: 52px;
   @media (min-width: $tablet-width) {
-    // padding-top: 95px;
+    width: 457px;
+    height: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding-top: 103px;
   }
 }
 

@@ -8,14 +8,12 @@
   @include list-reset;
   @include catalog-padding;
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
   }
-}
-
-.photos__item {
 }
 
 .photos__inner-list {
