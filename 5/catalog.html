@@ -11,7 +11,7 @@
 
 <body class="body">
   <div class="page__container">
-    <header class="header page__header header--menu-opened header--menu-closed header--nojs">
+    <header class="header page__header header--menu-closed header--nojs">
       <a class="header__logo logo" href="#">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
       </a>
@@ -40,7 +40,7 @@
       </nav>
     </header>
     <main class="main-catalog">
-      <section class="main-catalog__hero hero hero--catalog">
+      <section class="main-catalog__hero hero hero--inner-page">
         <h1 class="visually-hidden">Каталог.</h2>
           <img class="main-catalog__hero-text main-catalog__hero-text--catalog" src="img/sedona.svg" width="229"
             height="39">
@@ -53,8 +53,13 @@
         </div>
         <ul class="photos__list">
           <li class="photos__item photo">
-            <a class="photo__link">
-              <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы.">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg x2">
+                <source media="(min-width:768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg x2">
+                <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x x2" width="280"
+                  height="280" alt="неродные просторы.">
+              </picture>
             </a>
             <div class="photo__info-wrapper">
               <div class="photo__name-wrapper">
@@ -75,9 +80,14 @@
           <li>
             <ul class="photos__inner-list">
               <li class="photos__item photo">
-                <a class="photo__link">
-                  <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="280"
-                    alt="Местная растительность.">
+                <a class="photo__link" href="#">
+                  <picture>
+                    <source media="(min-width:1200px)"
+                      srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg x2">
+                    <source media="(min-width:768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg x2">
+                    <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg x2"
+                      width="280" height="280" alt="Местная растительность.">
+                  </picture>
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
@@ -96,8 +106,14 @@
                 </div>
               </li>
               <li class="photos__item photo">
-                <a class="photo__link">
-                  <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+                <a class="photo__link" href="#">
+                  <picture>
+                    <source media="(min-width:1200px)"
+                      srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg x2">
+                    <source media="(min-width:768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg x2">
+                    <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg x2"
+                      width="280" height="280" alt="Местная растительность.">
+                  </picture>
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
@@ -116,8 +132,14 @@
                 </div>
               </li>
               <li class="photos__item photo">
-                <a class="photo__link">
-                  <img class="photo__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                <a class="photo__link" href="#">
+                  <picture>
+                    <source media="(min-width:1200px)"
+                      srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg x2">
+                    <source media="(min-width:768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg x2">
+                    <img class="photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg x2"
+                      width="280" height="280" alt="Местная растительность.">
+                  </picture>
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
@@ -146,8 +168,13 @@
             очередной
             раз!</p>
         </div>
-        <a class="video__link" href="/">
-          <img class="" src="img/video-mobile.jpg" width="280" height="177" alt="видео.">
+        <a class="video__link" href="#">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280"
+              height="177" alt="видео.">
+          </picture>
         </a>
       </section>
     </main>
@@ -157,17 +184,17 @@
         <span class="footer__hashteg title">#visitSEDONA</span>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--vk"></a>
+            <a class="social-item__link link link-icon link-icon--vk" href="#"></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--tg"></a>
+            <a class="social-item__link link link-icon link-icon--tg" href="#"></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--yt"></a>
+            <a class="social-item__link link link-icon link-icon--yt" href="#"></a>
           </li>
         </ul>
-        <a class="footer__link footer__link--text">Разработано <svg class="footer__html-logo" width="28" height="36"
-            fill="none" viewBox="0 0 28 36">
+        <a class="footer__link footer__link--text" href="https://htmlacademy.ru">Разработано <svg
+            class="footer__html-logo" width="28" height="36" fill="none" viewBox="0 0 28 36">
             <path fill="currentColor"
               d="M13.8 1 .1 2.2v24.8l13.5 8 13.4-8V2.3L13.8 1Zm11.4 12L13.7 6.3l-.2-.2v.1l-11.4 7V4l11.5-1.3L25.2 4v9ZM13.6 7.8l11.5 6.7-4.5 2.7-7-4.3v1.4l5.8 3.6-.9.4-5-3v1.4l3.8 2.3-.8.6-3-1.9V19l2 1.1-1.9 1.1-11.4-6.6 11.4-6.9ZM2.1 16.1l11.4 6.8v1L5.6 19v1.4l8 4.9v1l-8-4.6V23l8 4.8 8.1-4.8v-5.3l3.4-2v10l-11.5 7L2.1 26V16Z" />
           </svg></a>
