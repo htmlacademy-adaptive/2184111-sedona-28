@@ -1,9 +1,12 @@
 .label {
   &--bold {
+    display: flex;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
     color: #000000;
+    align-items: center;
+    gap: 16px;
   }
 }

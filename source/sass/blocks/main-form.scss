@@ -18,13 +18,14 @@
 }
 
 .main-form__hero-text {
-  padding-top: 52px;
 }
 
 .main-form__row-wrapper {
   display: block;
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,8 +33,12 @@
 }
 
 .main-form__intro {
+  padding: 36px 20px 28px 20px;
   @media (min-width: $tablet-width) {
-    padding-left: 166px;
-    padding-right: 166px;
+    padding: 64px 166px 108px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 382px 68px 382px;
   }
 }

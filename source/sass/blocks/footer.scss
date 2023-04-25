@@ -4,18 +4,49 @@
 .footer__social-list {
   @include list-reset;
   display: flex;
+  gap: 6px;
+}
+
+.footer__social-item {
+  width: 48px;
+  height: 48px;
 }
 
 .footer__wrapper {
   @include flex-centring-column;
   padding: 33px 82px;
+  gap: 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
   }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.footer__html-academy-link {
+  width: 27px;
+  height: 34px;
+  fill: #000000;
+}
+
+.footer__html-logo {
+  margin-left: 12px;
 }

@@ -34,7 +34,7 @@
   @media (min-width: $desktop-width) {
     width: $adventage-desktop;
     padding: 50px 50px;
-    height: $adventage-desktop-height;
+    height: $adventage-tablet;
   }
 
   &--color {
@@ -52,6 +52,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    // height: 256px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,4 +70,10 @@
 
 .adventage__number {
   margin-bottom: 20px;
+}
+
+.adventage__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }

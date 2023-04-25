@@ -30,3 +30,14 @@
   flex-direction: column;
   align-items: center;
 }
+
+//conditions
+
+@mixin blue-hover-style {
+  background: #669ec0;
+}
+
+@mixin blue-active-style {
+  color: rgba(255, 255, 255, 0.3);
+  background: #5496bd;
+}

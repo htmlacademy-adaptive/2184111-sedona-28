@@ -1,16 +1,89 @@
 .button {
-  font-family: inherit, sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+  height: 58px;
+
+  &--burger {
+    position: relative;
+    width: 23px;
+    max-height: 23px;
+    color: $blue;
+    background-color: transparent;
+    z-index: 3;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/burger-menu.svg");
+      background-repeat: no-repeat;
+      width: 23px;
+      max-height: 23px;
+      background-position: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover {
+    @include blue-hover-style;
+  }
+  &:active {
+    @include blue-active-style;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
+
+  &--success {
+    width: 280px;
+    margin: 20px;
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      margin: 44px 91px;
+    }
+  }
+
+  &--error {
+    width: 180px;
+    @media (min-width: $tablet-width) {
+      width: 272px;
+    }
+  }
 
   &--submit {
     width: 100%;
     @media (min-width: $tablet-width) {
-      width: 50%;
+      width: 324px;
     }
+    @media (min-width: $desktop-width) {
+      width: 384px;
+    }
+  }
+}
+
+.button--burger {
+  position: relative;
+  width: 23px;
+  max-height: 23px;
+  color: $blue;
+  background-color: transparent;
+  z-index: 3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/burger-menu.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    max-height: 23px;
+    background-position: center;
+    transform: translate(-50%, -50%);
   }
 }

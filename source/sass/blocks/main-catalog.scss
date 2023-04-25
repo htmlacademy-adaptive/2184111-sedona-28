@@ -6,25 +6,44 @@
 
 .main-catalog__intro {
   @include index-padding;
+  padding-top: 30px;
+  padding-bottom: 17px;
+
+  &--bottom {
+    padding-top: 17px;
+    padding-bottom: 38px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 
   @media (min-width: $tablet-width) {
     @include catalog-padding-tablet;
+    padding: 66px 155px;
   }
 
   @media (min-width: $desktop-width) {
     // padding: 0, 370px;
-    padding-left: 370px;
-    padding-right: 370px;
+    padding: 100px 371px 65px 371px;
   }
 }
 
 .main-catalog__hero-text {
-  padding-top: 52px;
   @media (min-width: $tablet-width) {
-    // padding-top: 95px;
+    width: 457px;
+    height: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding-top: 103px;
+  }
+}
+
+.main-catalog__video {
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
   }
 }
