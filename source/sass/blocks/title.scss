@@ -44,4 +44,47 @@
       line-height: 40px;
     }
   }
+
+  &--tablet-padding {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin: 0;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      &::before {
+        display: flex;
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::after {
+        display: flex;
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      &::before {
+        display: flex;
+        content: "";
+        width: 280px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::after {
+        display: flex;
+        content: "";
+        width: 280px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
 }

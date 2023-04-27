@@ -1,6 +1,19 @@
 .photo {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid rgba(214, 214, 214, 1);
+      width: 320px;
+      height: 1px;
+      bottom: 0;
+      left: -20px;
+    }
+  }
 }
 
 .photo__likes-amount {

@@ -1,10 +1,19 @@
 .form {
 }
 
+.form .form__section {
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 24px;
+  }
+}
+
 .form__inputs-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 24px;
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     // padding-bottom: 0;
@@ -52,6 +61,11 @@
 
 .form__input-wrapper {
   display: block;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   &--checkbox {
     display: flex;
@@ -119,8 +133,40 @@
   border: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid #f2f2f2;
   flex-direction: column;
+  position: relative;
+  @media (max-width: $mobile-width-only) {
+    // padding-bottom: 39px;
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #e5e5e5;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+  }
+}
+
+.main-form__row-wrapper .form__section {
+  &:first-child {
+    @media (max-width: $mobile-width-only) {
+      padding-bottom: 39px;
+    }
+    @media (min-width: $tablet-width) {
+      border-right: 1px solid #dbdbdb;
+    }
+
+    &:last-child {
+      @media (max-width: $mobile-width-only) {
+        padding-bottom: 34px;
+      }
+    }
+  }
 }
 
 .form__button-wrapper {
@@ -128,6 +174,8 @@
   flex-direction: column;
   padding-bottom: 22px;
   align-items: flex-end;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     display: flex;
@@ -145,14 +193,16 @@
 .form__textarea {
   padding: 16px;
   width: 280px;
-  min-height: 118px;
   resize: vertical;
   background-color: $soft-gray;
   font-family: inherit;
-
+  border: none;
+  margin-bottom: 26px;
+  min-height: 150px;
   @media (min-width: $tablet-width) {
     min-height: 160px;
     width: 648px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
