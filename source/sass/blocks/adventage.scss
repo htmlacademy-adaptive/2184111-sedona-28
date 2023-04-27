@@ -24,6 +24,7 @@
   @include flex-centring-column;
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: $adventage-tablet;
@@ -40,6 +41,18 @@
   &--color {
     padding-top: 37px;
     padding-bottom: 37px;
+  }
+}
+
+.adventages__inner-list .adventages__item:not(:last-of-type)::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+    width: 284px;
+    height: 1px;
+    bottom: 0;
+    left: 18px;
   }
 }
 
