@@ -5,19 +5,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-
-  // &::after {
-  // content: "";
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // width: 0;
-  // height: 0;
-  // border-top: 48px solid rgba(255, 255, 255, 0.7);
-  // border-right: 27px solid transparent;
-  // border-left: 27px solid transparent;
-  //   // transform: translate(-50%, -50%) rotate(-90deg);
-  // }
 }
 
 .video__button {
@@ -32,6 +19,7 @@
   transform: translate(-50%, -50%) rotate(-90deg);
   background: transparent;
   padding: 0;
+  border-bottom: 0;
 }
 
 .video__img {
