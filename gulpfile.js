@@ -8,7 +8,7 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import htmlmin from "gulp-htmlmin";
 import { deleteAsync } from "del";
-import svgstore from "gulp-svgstore";
+// import svgstore from "gulp-svgstore";
 import svgo from "gulp-svgmin";
 import squoosh from "gulp-libsquoosh";
 import terser from "gulp-terser";
@@ -134,4 +134,6 @@ export const build = gulp.series(
 //   watcher
 // );
 
-exports.default = build;
+// exports.default = build;
+
+export default build;
