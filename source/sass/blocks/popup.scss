@@ -11,8 +11,9 @@
     @media (min-width: $tablet-width) {
       width: 640px;
       padding: 47px 38px 20px 38px;
-      @media (min-width: $desktop-width) {
-      }
+
+      // @media (min-width: $desktop-width) {
+      // }
     }
 
     &--opened {
@@ -28,11 +29,13 @@
         padding: 53px 98px;
         padding-bottom: 0;
         top: 162px;
+
         @media (min-width: $desktop-width) {
           top: 145px;
         }
       }
     }
+
     &--closed {
       display: none;
     }
@@ -40,11 +43,13 @@
 
   &__error {
     padding: 45px 42px 35px 42px;
+
     @media (min-width: $tablet-width) {
       width: 400px;
     }
-    @media (min-width: $desktop-width) {
-    }
+    // @media (min-width: $desktop-width) {
+    // }
+
     &--opened {
       position: fixed;
       background-color: #ffffff;
@@ -53,14 +58,17 @@
       left: 50%;
       transform: translateX(-50%);
       width: 400px;
+
       @media (min-width: $tablet-width) {
         top: 283px;
         padding: 50px 47px;
+
         @media (min-width: $desktop-width) {
           top: 244px;
         }
       }
     }
+
     &--closed {
       display: none;
     }
@@ -70,19 +78,21 @@
 .popup__message {
   text-align: center;
   margin: 0;
+
   &--success {
     margin-bottom: 35px;
-    @media (min-width: $tablet-width) {
-    }
-    @media (min-width: $desktop-width) {
-    }
+    // @media (min-width: $tablet-width) {
+    // }
+    // @media (min-width: $desktop-width) {
+    // }
   }
+
   &--error {
     margin-bottom: 28px;
-    @media (min-width: $tablet-width) {
-    }
-    @media (min-width: $desktop-width) {
-    }
+    // @media (min-width: $tablet-width) {
+    // }
+    // @media (min-width: $desktop-width) {
+    // }
   }
 }
 

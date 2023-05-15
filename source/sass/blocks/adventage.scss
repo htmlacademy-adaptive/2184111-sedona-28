@@ -3,6 +3,7 @@
     color: #ffffff;
     background-color: $blue;
   }
+
   &--grey {
     background-color: $gray-bg;
   }
@@ -15,8 +16,8 @@
     display: flex;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .adventage__wrapper {
@@ -68,8 +69,8 @@
     // height: 256px;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .adventage__title {

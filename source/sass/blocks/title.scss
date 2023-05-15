@@ -28,6 +28,7 @@
 
   &--left {
     text-align: left;
+
     @media (min-width: $tablet-width) {
       text-align: center;
     }
@@ -39,6 +40,7 @@
 
   &--bold {
     font-size: 21px;
+
     @media (min-width: $tablet-width) {
       font-size: 31px;
       line-height: 40px;
@@ -69,6 +71,7 @@
         background-color: #dbdbdb;
       }
     }
+
     @media (min-width: $desktop-width) {
       &::before {
         display: flex;
