@@ -1,1 +1,0 @@
-const headerNav=document.querySelector(".header"),headerToggle=document.querySelector(".header__menu-toggle");headerNav.classList.contains("header--nojs")&&headerNav.classList.remove("header--nojs"),headerToggle.addEventListener("click",(function(){headerNav.classList.toggle("header--menu-opened")}));
