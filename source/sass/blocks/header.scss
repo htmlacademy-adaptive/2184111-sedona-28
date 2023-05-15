@@ -42,13 +42,15 @@
     .header__menu-toggle {
       display: none;
     }
+
     .main-nav {
       @media (max-width: $mobile-width-only) {
         display: block;
         position: static;
-        transform: translate(0px, 0px);
+        transform: translate(0, 0);
       }
     }
+
     & img {
       display: none;
     }
@@ -58,8 +60,8 @@
     position: relative;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .header__logo {
@@ -80,6 +82,6 @@
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }

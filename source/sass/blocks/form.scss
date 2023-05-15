@@ -1,5 +1,5 @@
-.form {
-}
+// .form {
+// }
 
 .form .form__section {
   @media (max-width: $mobile-width-only) {
@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 24px;
+
   @media (max-width: $mobile-width-only) {
     padding-bottom: 0;
   }
@@ -24,6 +25,7 @@
     &--centred {
       padding-left: 84px;
       padding-right: 84px;
+
       @media (min-width: $desktop-width) {
         padding: 0;
       }
@@ -44,8 +46,8 @@
     padding-right: 43px;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .form__input-wrapper--right {
@@ -55,8 +57,8 @@
     padding-left: 44px;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .form__input-wrapper {
@@ -78,7 +80,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../img/phone.svg);
+      background-image: url("../img/phone.svg");
       top: 40px;
       width: 18px;
       height: 18px;
@@ -105,7 +107,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../img/mail.svg);
+      background-image: url("../img/mail.svg");
       top: 43px;
       width: 16px;
       height: 12px;
@@ -135,6 +137,7 @@
   margin: 0;
   flex-direction: column;
   position: relative;
+
   @media (max-width: $mobile-width-only) {
     // padding-bottom: 39px;
     &::after {
@@ -148,8 +151,8 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-  }
+  // @media (min-width: $tablet-width) {
+  // }
 }
 
 .main-form__row-wrapper .form__section {
@@ -157,6 +160,7 @@
     @media (max-width: $mobile-width-only) {
       padding-bottom: 39px;
     }
+
     @media (min-width: $tablet-width) {
       border-right: 1px solid #dbdbdb;
     }
@@ -199,6 +203,7 @@
   border: none;
   margin-bottom: 26px;
   min-height: 150px;
+
   @media (min-width: $tablet-width) {
     min-height: 160px;
     width: 648px;
@@ -213,6 +218,7 @@
 .form__title {
   margin-bottom: 20px;
   padding-top: 24px;
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 28px;

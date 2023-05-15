@@ -1,5 +1,5 @@
-.footer {
-}
+// .footer {
+// }
 
 .footer__social-list {
   @include list-reset;
@@ -24,8 +24,8 @@
     gap: 0;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .footer__link {

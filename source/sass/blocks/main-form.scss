@@ -9,31 +9,32 @@
 
   @media (min-width: $tablet-width) {
     // display: flex;
-
     @include catalog-padding-tablet;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
-.main-form__hero-text {
-}
+// .main-form__hero-text {
+// }
 
 .main-form__row-wrapper {
   display: block;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 63px;
   }
 
-  @media (min-width: $desktop-width) {
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .main-form__intro {
   padding: 36px 20px 28px 20px;
+
   @media (min-width: $tablet-width) {
     padding: 64px 166px 108px 166px;
   }

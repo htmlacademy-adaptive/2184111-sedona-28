@@ -14,11 +14,14 @@
 
   &--radio {
     border-radius: 100vh;
+
     &:hover {
       background-color: $medium-gray;
     }
+
     &:active {
       background-color: $deep-gray;
+
       &::before {
         opacity: 0.3;
       }
@@ -27,11 +30,14 @@
 
   &--checkbox {
     border-radius: 4px;
+
     &:hover {
       background-color: $medium-gray;
     }
+
     &:active {
       background-color: $deep-gray;
+
       &::before {
         opacity: 0.3;
       }

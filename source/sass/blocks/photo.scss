@@ -40,8 +40,9 @@
 
 .photo__name-wrapper {
   display: block;
-  @media (min-width: $tablet-width) {
-  }
+
+  // @media (min-width: $tablet-width) {
+  // }
 
   @media (min-width: $desktop-width) {
     margin: 0;

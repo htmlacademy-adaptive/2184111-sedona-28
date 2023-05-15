@@ -48,8 +48,8 @@
       padding: 95px 147px 117px 147px;
     }
 
-    @media (min-width: $desktop-width) {
-    }
+    // @media (min-width: $desktop-width) {
+    // }
   }
 
   &::after {
@@ -64,16 +64,17 @@
     height: 57px;
     background-position: center;
 
-    @media (min-width: $tablet-width) {
-    }
+    // @media (min-width: $tablet-width) {
+    // }
 
-    @media (min-width: $desktop-width) {
-    }
+    // @media (min-width: $desktop-width) {
+    // }
   }
 }
 
 .hero--catalog::after {
   top: 65.7%;
+
   @media (min-width: $tablet-width) {
     top: 78.3%;
   }
