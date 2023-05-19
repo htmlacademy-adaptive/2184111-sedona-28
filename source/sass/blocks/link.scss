@@ -19,6 +19,10 @@
   &:active::after {
     opacity: 0.3;
   }
+
+  &--bold-text {
+    font-size: 21px;
+  }
 }
 
 .link-icon {

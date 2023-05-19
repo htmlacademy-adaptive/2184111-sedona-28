@@ -10,9 +10,26 @@
   padding: 24px 18px;
   background-color: #ffffff;
 
+  &--food {
+    padding-top: 2px;
+
+    @media (min-width: $tablet-width) {
+      padding: 24px 18px;
+    }
+  }
+
+  &--present {
+    padding-top: 2px;
+    padding-bottom: 42px;
+
+    @media (min-width: $tablet-width) {
+      padding: 24px 18px;
+    }
+
+  }
+
   @media (min-width: $tablet-width) {
     width: $adventage-tablet;
-    // height: 330px;
     margin-bottom: 0;
     padding-left: 33px;
     padding-right: 33px;
@@ -25,8 +42,8 @@
     min-height: $adventage-desktop-height;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 69px;
+    padding-bottom: 69px;
   }
 }
 
@@ -70,12 +87,16 @@
   flex-direction: row;
   gap: 8px;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    gap: 26px;
-    margin-bottom: 25px;
+    // gap: 26px;
+    margin-bottom: 27px
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
 
   &--hotel::before {
@@ -92,6 +113,14 @@
     @media (min-width: $tablet-width) {
       width: 77px;
       height: 72px;
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 73px;
+      background-size: 80px 79px;
+      margin-bottom: 18px;
     }
   }
 
@@ -106,9 +135,17 @@
     background-size: contain;
     background-position: center;
 
+
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 69px;
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 73px;
+      height: 76px;
+      background-size: 73px 70px;
     }
   }
 
@@ -126,7 +163,17 @@
     @media (min-width: $tablet-width) {
       width: 67px;
       height: 75px;
+      margin-bottom: 7px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 78px;
+      height: 75px;
+      background-size: 78px 75px;
+      margin-bottom: 17px;
+    }
+
+
   }
 }
 

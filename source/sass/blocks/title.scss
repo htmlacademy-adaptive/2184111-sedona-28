@@ -18,8 +18,9 @@
 
   &--photos {
     text-align: left;
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
     font-size: 14px;
+    line-height: 21px;
 
     @media (min-width: $desktop-width) {
       color: #ffffff;
@@ -42,8 +43,8 @@
     font-size: 21px;
 
     @media (min-width: $tablet-width) {
-      font-size: 31px;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: 30px;
     }
   }
 
@@ -90,4 +91,16 @@
       }
     }
   }
+
+  &--catalog {
+    font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+  }
+
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 30px;
+//  }
+}
 }

@@ -7,8 +7,9 @@
     padding-right: 60px;
   }
 
-  // @media (min-width: $desktop-width) {
-  // }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .photos__inner-list {
@@ -28,7 +29,7 @@
 
 .photos__item {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -48,16 +49,4 @@
     position: relative;
     grid-template-columns: repeat(3, 33.33%);
   }
-}
-
-.photo__name-wrapper {
-  margin-bottom: 11px;
-  padding-top: 15px;
-
-  // @media (min-width: $tablet-width) {
-  //   // padding: 22px auto 15px 20px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }

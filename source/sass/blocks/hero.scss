@@ -41,15 +41,16 @@
   }
 
   &--inner-page {
-    padding: 52px 40px 67px 40px;
+    padding: 52px 40px 61px 40px;
     background-position: 50% 100%;
 
     @media (min-width: $tablet-width) {
-      padding: 95px 147px 117px 147px;
+      padding: 95px 147px 110px 147px;
     }
 
-    // @media (min-width: $desktop-width) {
-    // }
+    @media (min-width: $desktop-width) {
+      padding: 99px 147px 118px;
+    }
   }
 
   &::after {
