@@ -49,6 +49,7 @@
   }
 
   &--tablet-padding {
+
     @media (min-width: $tablet-width) {
       display: flex;
       margin: 0;

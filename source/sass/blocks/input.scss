@@ -5,6 +5,8 @@
   background-color: $soft-gray;
   border: none;
   padding: 16px;
+  font-size: 18px;
+  // color: rgba(0, 0, 0, 0.3);
 
   &--radio,
   &--checkbox {
@@ -49,4 +51,32 @@
       background-color: #e5e5e5;
     }
   }
+
+  &--count::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--graph {
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 295px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+    }
+  }
+}
+
+.form__box:focus-within .input--checkbox {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.form__box:focus-within .input--radio {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }

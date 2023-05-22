@@ -50,6 +50,11 @@
     height: 78px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    height: 80px;
+  }
+
 }
 
 .main-catalog__video {
