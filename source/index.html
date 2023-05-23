@@ -89,11 +89,17 @@
                   </div>
                   <picture>
                     <source
+                      media="(min-width:1200px)"
+                      srcset="img/adventage1_desktop_illustration.webp 1x, img/adventage1_desktop_illustration@2x.webp x2">
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/adventage1_tablet_illustration.webp 1x, img/adventage1_tablet_illustration@2x.webp x2">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="img/adventage1_illustration.webp 1x, img/adventage1_illustration@2x.webp x2">
+                    <source
                       media="(min-width: 1200px)"
-                      srcset="
-                        img/adventage1_desktop_illustration.jpg    1x,
-                        img/adventage1_desktop_illustration@2x.jpg 2x
-                      "/>
+                      srcset="img/adventage1_desktop_illustration.jpg 1x, img/adventage1_desktop_illustration@2x.jpg 2x"/>
                     <source
                       media="(min-width: 768px)"
                       srcset="img/adventage1_tablet_illustration.jpg 1x, img/adventage1_tablet_illustration@2x.jpg x2"/>
@@ -150,38 +156,26 @@
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/adventage2_desktop_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_desktop_illustration.webp 1x, adventage2_desktop_illustration@2x.webp 2x"/>
                     <source
                       media="(min-width: 768px)"
-                      srcset="img/adventage2_tablet_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_tablet_illustration.webp 1x, adventage2_tablet_illustration@2x.webp 2x"/>
                     <source
                       media="(max-width: 767px)"
-                      srcset="img/adventage2_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_illustration.webp 1x, img/adventage2_illustration@2x.webp 2x"/>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="
-                        img/adventage2_desktop_illustration.jpg    1x,
-                        img/adventage2_desktop_illustration@2x.jpg 2x
-                      "
-                    />
+                      srcset="img/adventage2_desktop_illustration.jpg 1x, img/adventage2_desktop_illustration@2x.jpg 2x"/>
                     <source
                       media="(min-width: 768px)"
-                      srcset="
-                        img/adventage2_tablet_illustration.jpg    1x,
-                        img/adventage2_tablet_illustration@2x.jpg 2x
-                      "
-                    />
+                      srcset=" img/adventage2_tablet_illustration.jpg 1x, img/adventage2_tablet_illustration@2x.jpg 2x"/>
                     <img
                       class="adventage__image"
                       src="img/adventage2_illustration.jpg"
                       srcset="img/adventage2_illustration@2x.jpg 2x"
                       width="320"
                       height="260"
-                      alt="Мост дьявола."
-                    />
+                      alt="Мост дьявола."/>
                   </picture>
                 </div>
               </li>
@@ -245,6 +239,15 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <picture>
               <source
+                media="(min-width:1200px)"
+                srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp x2">
+              <source
+                media="(min-width:768px)"
+                srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp x2">
+              <source
+                media="(max-width:767px)"
+                srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp x2">
+              <source
                 media="(min-width: 1200px)"
                 srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"/>
               <source
@@ -296,9 +299,6 @@
                 fill="none"
                 viewBox="0 0 28 36"
                 aria-labelledby="html-academy-site">
-                <!-- <title id="html-academy-site">
-                  ссылка на сайт html academy -->
-                <!-- </title> -->
                 <use xlink:href="#html-academy-icon"></use></svg></a>
           </div>
         </footer>

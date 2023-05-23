@@ -13,18 +13,14 @@
     flex-direction: row;
   }
 
-  // @media (min-width: $desktop-width) {
-  // }
-
   & .adventages__item:nth-child(3) {
     padding-top: 2px;
     padding-bottom: 5px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
-}
-
 }
 
 .adventages__item {

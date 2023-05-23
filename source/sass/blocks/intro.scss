@@ -32,23 +32,21 @@
 
 
   &--bottom {
-  @media (min-width: $tablet-width) {
-    padding: 0;
-   }
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
 
-   @media (min-width: $desktop-width) {
-    padding: 0 210px;
-    padding-top: 3px;
-  }
+    @media (min-width: $desktop-width) {
+      padding: 0 210px;
+      padding-top: 3px;
+    }
   }
 
   &--form {
-    // padding: 0 8px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
- }
 }
 
 
@@ -75,11 +73,10 @@
 }
 
 .intro__slogan {
-  // margin-bottom: $intro-title-margin;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-   margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   &--form {
@@ -87,7 +84,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 22px;
-     }
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 31px;
@@ -96,13 +93,12 @@
 }
 
 .intro__booking-title {
-  // margin-bottom: $intro-title-margin;
   margin-bottom: 23px;
   padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-   }
+  }
 }
 
 .intro__booking-link {
@@ -114,20 +110,10 @@
     margin: 0 auto;
     padding: 16px 124px;
   }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }
 
 .intro__booking-link-wrapper {
   text-align: center;
-
-  // @media (min-width: $tablet-width) {
-  //   padding: 166px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 166px;
 }
 
 .intro__title {
@@ -136,14 +122,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
   }
-
-//     @media (min-width: $desktop-width) {
-//     margin-bottom: 30px;
-//  }
 }
 
 .intro__title.title--catalog {
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
- }
+  }
 }

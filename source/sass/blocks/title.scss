@@ -18,7 +18,6 @@
 
   &--photos {
     text-align: left;
-    // margin-bottom: 8px;
     font-size: 14px;
     line-height: 21px;
 
@@ -35,10 +34,6 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    // font-size: 21px;
-  }
-
   &--bold {
     font-size: 21px;
 
@@ -49,7 +44,6 @@
   }
 
   &--tablet-padding {
-
     @media (min-width: $tablet-width) {
       display: flex;
       margin: 0;
@@ -98,10 +92,6 @@
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
+    }
   }
-
-//   @media (min-width: $desktop-width) {
-//     margin-bottom: 30px;
-//  }
-}
 }

@@ -119,17 +119,16 @@
 
 .photos__inner-list .photos__item .photo__info-wrapper {
   @media (min-width: $desktop-width) {
-  padding-top: 17px;
-  padding-left: 25px;
+    padding-top: 17px;
+    padding-left: 25px;
   }
 }
 
 
 .photo__title {
-
   &--indent {
     @media (min-width: $desktop-width) {
-  margin-bottom: 4px;
+      margin-bottom: 4px;
+    }
   }
-}
 }

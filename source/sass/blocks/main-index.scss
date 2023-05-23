@@ -67,7 +67,6 @@
 }
 
 .main-index__booking {
-  // @include index-padding;
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
@@ -94,8 +93,6 @@
 }
 
 .main-index__hero-text {
-  // padding-top: 20px;
-
   @media (min-width: $tablet-width) {
     width: 459px;
     padding-top: 0;
