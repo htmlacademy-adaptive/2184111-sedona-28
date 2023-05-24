@@ -20,6 +20,11 @@
   font-size: 14px;
   font-weight: 700;
   padding-top: 7px;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photo__link {

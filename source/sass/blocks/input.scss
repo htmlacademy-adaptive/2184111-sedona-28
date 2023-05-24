@@ -22,10 +22,6 @@
 
     &:active {
       background-color: $deep-gray;
-
-      &::before {
-        opacity: 0.3;
-      }
     }
   }
 
@@ -38,10 +34,6 @@
 
     &:active {
       background-color: $deep-gray;
-
-      &::before {
-        opacity: 0.3;
-      }
     }
   }
 
@@ -68,6 +60,11 @@
       width: 430px;
     }
   }
+}
+
+.input--radio:active::before,
+.input--checkbox:active::before {
+  opacity: 0.3;
 }
 
 .form__box:focus-within .input--checkbox {

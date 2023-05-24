@@ -8,7 +8,7 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import htmlmin from "gulp-htmlmin";
 import { deleteAsync } from "del";
-// import svgstore from "gulp-svgstore";
+import svgstore from "gulp-svgstore";
 import svgo from "gulp-svgmin";
 import squoosh from "gulp-libsquoosh";
 import terser from "gulp-terser";
@@ -100,6 +100,16 @@ function server(done) {
   done();
 }
 
+// Sprite
+
+const sprite = () => {
+  return gulp.src('source/img/sprite/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
+
 // Reload
 
 export const reload = (done) => {
@@ -123,8 +133,10 @@ export const build = gulp.series(
     styles,
     scripts,
     createWebp,
+    sprite,
     svg
     ),
+    server
 );
 
 export default gulp.series(
@@ -136,6 +148,7 @@ export default gulp.series(
   optimizeImages,
   copyImages,
   createWebp,
+  sprite,
   svg,
   copy,
   ),
