@@ -55,12 +55,15 @@
     <main class="main-catalog">
       <section class="main-catalog__hero hero hero--inner-page">
         <h1 class="visually-hidden">Каталог.</h1>
-        <img class="main-catalog__hero-text main-catalog__hero-text--catalog" src="img/sedona.svg" width="229"
-          height="39">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/text-sedona.svg">
+         <img class="main-catalog__hero-text" src="img/sedona.svg" width="229"
+          height="39" alt="Седона.">
+        </picture>
       </section>
       <section class="main-catalog__photos photos">
         <div class="main-catalog__intro intro">
-          <h2 class="intro__title title">фото и видео</h2>
+          <h2 class="intro__title title title--catalog">фото и видео</h2>
           <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике и экономике.</p>
         </div>
@@ -69,6 +72,8 @@
             <a class="photo__link" href="#">
               <picture>
                 <source media="(min-width:1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp x2">
+                <source media="(min-width:768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp x2">
+                <source media="(max-width:767px)" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp x2">
                 <source media="(min-width:1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg x2">
                 <source media="(min-width:768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg x2">
                 <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x x2" width="280"
@@ -78,7 +83,7 @@
             <div class="photo__info-wrapper">
               <div class="photo__name-wrapper">
                 <h3 class="photo__title title title--photos">неродные просторы</h3>
-                <p class="photo__author author">Имя автора:
+                <p class="photo__author author">Автор фото:
                   <span class="author__name">Борис</span>
                 </p>
               </div>
@@ -96,6 +101,9 @@
               <li class="photos__item photo">
                 <a class="photo__link" href="#">
                   <picture>
+                    <source media="(min-width:1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp x2">
+                    <source media="(min-width:768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp x2">
+                    <source media="(max-width:767px)" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp x2">
                     <source media="(min-width:1200px)"
                       srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg x2">
                     <source media="(min-width:768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg x2">
@@ -105,8 +113,8 @@
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
-                    <h3 class="photo__title title title--photos">Местная растительность</h3>
-                    <p class="photo__author author">Имя автора:
+                    <h3 class="photo__title photo__title--indent title title--photos">Местная растительность</h3>
+                    <p class="photo__author author">Автор фото:
                       <span class="author__name">Сергей</span>
                     </p>
                   </div>
@@ -122,6 +130,9 @@
               <li class="photos__item photo">
                 <a class="photo__link" href="#">
                   <picture>
+                    <source media="(min-width:1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp x2">
+                    <source media="(min-width:768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp x2">
+                    <source media="(max-width:767px)" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp x2">
                     <source media="(min-width:1200px)"
                       srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg x2">
                     <source media="(min-width:768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg x2">
@@ -131,8 +142,8 @@
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
-                    <h3 class="photo__title title title--photos">Дорога на север</h3>
-                    <p class="photo__author author">Имя автора:
+                    <h3 class="photo__title photo__title--indent title title--photos">Дорога на север</h3>
+                    <p class="photo__author author">Автор фото:
                       <span class="author__name">Пётр</span>
                     </p>
                   </div>
@@ -148,6 +159,9 @@
               <li class="photos__item photo">
                 <a class="photo__link" href="#">
                   <picture>
+                    <source media="(min-width:1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp x2">
+                    <source media="(min-width:768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp x2">
+                    <source media="(max-width:767px)" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp x2">
                     <source media="(min-width:1200px)"
                       srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg x2">
                     <source media="(min-width:768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg x2">
@@ -157,8 +171,8 @@
                 </a>
                 <div class="photo__info-wrapper">
                   <div class="photo__name-wrapper">
-                    <h3 class="photo__title title title--photos">Мост дьявола</h3>
-                    <p class="photo__author author">Имя автора:
+                    <h3 class="photo__title photo__title--indent title title--photos">Мост дьявола</h3>
+                    <p class="photo__author author">Автор фото:
                       <span class="author__name">Антон</span>
                     </p>
                   </div>
@@ -177,19 +191,22 @@
       </section>
       <section class="main-catalog__video video">
         <div class="main-catalog__intro main-catalog__intro--bottom intro">
-          <h2 class="intro__title title title--bold">Все еще сомневаетесь?</h2>
-          <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          <h2 class="intro__title title title--catalog">Все еще сомневаетесь?</h2>
+          <p class="intro__description intro__description--bottom">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной
             раз!</p>
         </div>
         <div class="video__link" href="#">
           <picture>
+            <source media="(min-width:1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp x2">
+            <source media="(min-width:768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp x2">
+            <source media="(max-width:767px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp x2">
             <source media="(min-width:1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width:768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280"
               height="177" alt="видео.">
           </picture>
-          <button class="video__button" type="button"></button>
+          <button class="video__button" type="button"><span class="visually-hidden">Запустить видео.</span></button>
         </div>
       </section>
     </main>
@@ -199,13 +216,13 @@
         <span class="footer__hashteg title">#visitSEDONA</span>
         <ul class="footer__social-list">
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--vk" href="#"></a>
+            <a class="social-item__link link link-icon link-icon--vk" href="#"><span class="visually-hidden">вконтакте.</span></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--tg" href="#"></a>
+            <a class="social-item__link link link-icon link-icon--tg" href="#"><span class="visually-hidden">телеграмм.</span></a>
           </li>
           <li class="footer__social-item social-item">
-            <a class="social-item__link link link-icon link-icon--yt" href="#"></a>
+            <a class="social-item__link link link-icon link-icon--yt" href="#"><span class="visually-hidden">ютуб.</span></a>
           </li>
         </ul>
         <a class="footer__link footer__link--text" href="https://htmlacademy.ru">Разработано

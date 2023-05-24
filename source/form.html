@@ -51,109 +51,112 @@
     </header>
     <main class="main-form">
       <section class="main-form__hero hero hero--inner-page">
-        <img class="main-form__hero-text" src="img/sedona.svg" width="229" height="39">
+        <picture>
+         <source media="(min-width:1200px)" srcset="img/text-sedona.svg">
+         <img class="main-form__hero-text" src="img/sedona.svg" width="229"
+          height="39" alt="Седона.">
+        </picture>
       </section>
       <section class="main-form__main-section">
         <h1 class="visually-hidden">Форма отзыва.</h1>
         <div class="main-form__intro intro">
-          <span class="intro__slogan title title--bold">Оставьте свой отзыв</span>
-          <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          <span class="intro__slogan intro__slogan--form title title--catalog">Оставьте свой отзыв</span>
+          <p class="intro__description intro__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а также о посещенных
             вами достопримечательностях</p>
         </div>
         <form class="main-form__form form">
           <div class="main-form__row-wrapper">
             <fieldset class="form__section">
-              <legend class="form__title title">представьтесь</legend>
-
+              <legend class="form__title form__title--left title">представьтесь:</legend>
               <p class="form__input-wrapper form__input-wrapper--left">
                 <label class="form__label label" for="name">имя*:</label>
-                <input class="form__input input input--count" type="text" id="second-name" placeholder="Пустота">
+                <input class="form__input input input--graph input--count" type="text" id="first-name" placeholder="Пётр">
+              </p>
+              <p class="form__input-wrapper form__input-wrapper--left">
+                <label class="form__label label" for="name">фамилия*:</label>
+                <input class="form__input input input--graph input--count" type="text" id="second-name" placeholder="Пустота">
               </p>
               <p class="form__input-wrapper form__input-wrapper--left">
                 <label class="form__label label" for="third-name">отчество:</label>
-                <input class="form__input input input--count" type="text" id="third-name" placeholder="Викторович">
+                <input class="form__input input input--graph input--count" type="text" id="third-name" placeholder="Викторович">
               </p>
-
             </fieldset>
             <fieldset class="form__section">
-              <legend class="form__title title">контактная информация</legend>
-
+              <legend class="form__title form__title--right title">контактная информация:</legend>
               <p class="form__input-wrapper form__input-wrapper--tel form__input-wrapper--right">
                 <label class="form__label label" for="tel">контактный телефон*:</label>
-                <input class="form__input input input--tel input--count" type="tel" id="tel"
+                <input class="form__input input input--graph input--tel input--count" type="tel" id="tel"
                   placeholder="Введите телефон">
               </p>
               <p class="form__input-wrapper form__input-wrapper--email form__input-wrapper--right">
                 <label class="form__label label" for="email">электронная почта*:</label>
-                <input class="form__input input input--email input--count" type="text" id="email"
+                <input class="form__input input input--graph input--email input--count" type="text" id="email"
                   placeholder="Введите e-mail">
               </p>
-
             </fieldset>
           </div>
           <fieldset class="form__section">
-            <legend class="form__title title title--tablet-padding">общее впечатление:</legend>
-            <div class="form__inputs-wrapper">
-              <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold">
+            <legend class="form__title title title--tablet-padding">ваше общее впечатление:</legend>
+            <div class="form__inputs-wrapper form__inputs-wrapper--nopadding">
+              <p class="form__input-wrapper form__input-wrapper--radio">
+                <label class="form__box label label--bold">
                   <input class="form__input-radio-checkbox visually-hidden" name="radio-button" type="radio"
                     id="radio-positive">
                   <span class="form__input input input--radio"></span>
                   <span class="form__input form__input--lebel">Скорее положительное</span>
                 </label>
               </p>
-              <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold" for="radio-nagative">
+              <p class="form__input-wrapper form__input-wrapper--radio">
+                <label class="form__box label label--bold" for="radio-nagative">
                   <input class="form__input-radio-checkbox visually-hidden" name="radio-button" type="radio"
                     id="radio-nagative" value="negative-reaction">
                   <span class="form__input input input--radio"></span>
-                  <span class="form__input input--lebel">Скорее отрицательное</span>
+                  <span class="form__input form__input--lebel">Скорее отрицательное</span>
                 </label>
               </p>
-              <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold" for="radio-ambivalent">
+              <p class="form__input-wrapper form__input-wrapper--radio">
+                <label class="form__box label label--bold" for="radio-ambivalent">
                   <input class="form__input-radio-checkbox visually-hidden" name="radio-button" type="radio"
                     id="radio-ambivalent" value="ambivalent-reaction">
                   <span class="form__input input input--radio"></span>
-                  <span class="form__input input--lebel">Затрудняюсь ответить</span>
+                  <span class="form__input form__input--lebel">Затрудняюсь ответить</span>
                 </label>
               </p>
             </div>
           </fieldset>
-
           <fieldset class="form__section">
-            <legend class="form__title title title--tablet-padding">посещенные достопримечательности:</legend>
+            <legend class="form__title title title--tablet-padding">посещенные<br/>достопримечательности:</legend>
             <div class="form__inputs-wrapper form__inputs-wrapper--centred">
               <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold" for="devils-bridge">
+                <label class="form__box label label--bold" for="devils-bridge">
                   <input class="form__input-checkbox visually-hidden" type="checkbox" name="devils-bridge"
                     id="devils-bridge" checked>
                   <span class="form__input input input--checkbox"></span>
-                  <span class="form__input input--lebel">Мост Дьявола</span>
+                  <span class="form__input form__input--lebel">Мост Дьявола</span>
                 </label>
               </p>
               <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold" for="bell-mountain">
+                <label class="form__box label label--bold" for="bell-mountain">
                   <input class="form__input-checkbox visually-hidden" type="checkbox" name="bell-mountain"
                     id="bell-mountain" checked>
                   <span class="form__input input input--checkbox"></span>
-                  <span class="form__input input--lebel">Гора-Колокол</span>
+                  <span class="form__input form__input--lebel">Гора-Колокол</span>
                 </label>
               </p>
               <p class="form__input-wrapper form__input-wrapper--checkbox">
-                <label class="form__label label label--bold" for="slide-park">
+                <label class="form__box label label--bold" for="slide-park">
                   <input class="form__input-checkbox visually-hidden" type="checkbox" name="slide-park" id="slide-park"
                     checked>
                   <span class="form__input input input--checkbox"></span>
-                  <span class="form__input input--lebel">Слайд-парк</span>
+                  <span class="form__input form__input--lebel">Слайд-парк</span>
                 </label>
               </p>
               <p class="form__input-wrapper form__input-wrapper--checkbox ">
-                <label class="form__label label label--bold" for="red-mountains">
+                <label class="form__box label label--bold" for="red-mountains">
                   <input class="form__input-checkbox visually-hidden" type="checkbox" name="red-mountains"
                     id="red-mountains">
                   <span class="form__input input input--checkbox"></span>
-                  <span class="form__input input--lebel">Красные скалы</span>
+                  <span class="form__input form__input--lebel">Красные скалы</span>
                 </label>
               </p>
             </div>
@@ -169,29 +172,26 @@
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button button--submit" type="button">отправить отзыв</button>
-            <span class="form-hint">*-обязательные поля</span>
+            <span class="form-hint">* — обязательные поля</span>
           </div>
-          <div class="popup popup__error popup__error--closed popup__error--opened">
-            <span class="popup__name title title--bold">что-то пошло не&nbsp;так!</span>
-            <p class="popup__message popup__message--error">Проверьте поля, выделенные красным, скорее всего вы забыли
+          <div class="popup-error popup-error--closed popup-error--opened">
+            <span class="popup-error__name title title--bold">что-то пошло не&nbsp;так!</span>
+            <p class="popup-error__message">Проверьте поля, выделенные красным, скорее всего вы забыли
               их заполнить</p>
-            <button class="button button--error" type="button">Ок</button>
+            <button class="popup-error__button button button--error" type="button">Ок</button>
           </div>
-
-          <div class="popup popup__success popup__success--closed popup__success--opened">
-            <span class="popup__name title title--bold">ваш отзыв отправлен!</span>
-            <p class="popup__message popup__message--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В
-              ближайшее время мы
+          <div class="popup-success popup-success--closed popup-success--opened">
+            <span class="popup-success__name title title--bold">ваш отзыв отправлен!</span>
+            <p class="popup-success__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+              В&nbsp;ближайшее время мы
               опубликуем его на сайте.</p>
-            <div class="popup__button-wrapper">
-              <button class="button button--success" type="button">закрыть окно</button>
+            <div class="popup-success__button-wrapper">
+              <button class="popup-success__button button button--success" type="button">закрыть окно</button>
             </div>
           </div>
-
         </form>
       </section>
     </main>
-
     <footer class="page__footer footer">
       <h2 class="visually-hidden">Ссылки на соц.сети.</h2>
       <div class="footer__wrapper">
@@ -212,14 +212,11 @@
             </a>
           </li>
         </ul>
-
         <a class="footer__link footer__link--text" href="https://htmlacademy.ru">Разработано
           <svg class="footer__html-logo" width="28" height="36" fill="none" viewBox="0 0 28 36"
             aria-labelledby="html-academy-site">
-            <title id="html-academy-site">ссылка на сайт html academy</title>
             <use xlink:href="#html-academy-icon"></use>
           </svg></a>
-
       </div>
     </footer>
    </div>

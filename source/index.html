@@ -12,7 +12,7 @@
   </head>
 
   <body class="body page__header">
-    <svg style="display: none">
+    <svg style="display: none;">
       <symbol viewBox="0 0 28 36" id="html-academy-icon">
         <title id="html-academy-site">ссылка на сайт html academy</title>
         <path
@@ -62,12 +62,13 @@
               class="main-index__hero-text"
               src="img/hero-text.svg"
               width="282"
-              height="214"/>
+              height="214"
+              alt="Добро пожаловать в Седону."/>
           </div>
           <section class="main-index__adventages-section adventages-section">
             <div class="main-index__intro intro">
               <h1 class="intro__slogan title">
-                седона — небольшой городок в аризоне, заслуживающий большего!
+                седона — небольшой городок&nbsp;в&nbsp;аризоне, заслуживающий&nbsp;большего!
               </h1>
               <p class="intro__description">
                 Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -77,7 +78,7 @@
             <ul class="adventages page__adventages">
               <li class="adventages__item adventage adventage--color">
                 <div class="adventage__with-image-wrappper">
-                  <div class="adventage__wrapper adventage__wrapper--color">
+                  <div class="adventage__wrapper adventage__wrapper--color adventage__wrapper--decorated">
                     <h3 class="adventage__title title title--color">
                       НАСТОЯЩИЙ ГОРОДОК
                     </h3>
@@ -88,11 +89,17 @@
                   </div>
                   <picture>
                     <source
+                      media="(min-width:1200px)"
+                      srcset="img/adventage1_desktop_illustration.webp 1x, img/adventage1_desktop_illustration@2x.webp x2">
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/adventage1_tablet_illustration.webp 1x, img/adventage1_tablet_illustration@2x.webp x2">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="img/adventage1_illustration.webp 1x, img/adventage1_illustration@2x.webp x2">
+                    <source
                       media="(min-width: 1200px)"
-                      srcset="
-                        img/adventage1_desktop_illustration.jpg    1x,
-                        img/adventage1_desktop_illustration@2x.jpg 2x
-                      "/>
+                      srcset="img/adventage1_desktop_illustration.jpg 1x, img/adventage1_desktop_illustration@2x.jpg 2x"/>
                     <source
                       media="(min-width: 768px)"
                       srcset="img/adventage1_tablet_illustration.jpg 1x, img/adventage1_tablet_illustration@2x.jpg x2"/>
@@ -120,7 +127,7 @@
                       еда
                     </h4>
                     <p class="inner-item__description">
-                      Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                      Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы&nbsp;НЕ&nbsp;разочаруетесь!
                     </p>
                   </li>
                   <li class="inner-item inner-item--present">
@@ -129,7 +136,7 @@
                       сувениры
                     </h4>
                     <p class="inner-item__description">
-                      Не только китайского, но и местного производства!
+                      Не только китайского, но&nbsp;и&nbsp;местного&nbsp;производства!
                     </p>
                   </li>
                 </ul>
@@ -139,7 +146,7 @@
                   class="adventage__with-image-wrappper adventage__with-image-wrappper--reversed">
                   <div class="adventage__wrapper adventage__wrapper--color">
                     <h3 class="adventage__title title title--color">
-                      ТАМ ЕСТЬ Мост дьявола
+                      ТАМ ЕСТЬ Мост&nbsp;дьявола
                     </h3>
                     <span class="adventage__number">— №2 —</span>
                     <p class="adventage__description">
@@ -149,38 +156,26 @@
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/adventage2_desktop_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_desktop_illustration.webp 1x, adventage2_desktop_illustration@2x.webp 2x"/>
                     <source
                       media="(min-width: 768px)"
-                      srcset="img/adventage2_tablet_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_tablet_illustration.webp 1x, adventage2_tablet_illustration@2x.webp 2x"/>
                     <source
                       media="(max-width: 767px)"
-                      srcset="img/adventage2_desktop_illustration.webp 1x"
-                    />
+                      srcset="img/adventage2_illustration.webp 1x, img/adventage2_illustration@2x.webp 2x"/>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="
-                        img/adventage2_desktop_illustration.jpg    1x,
-                        img/adventage2_desktop_illustration@2x.jpg 2x
-                      "
-                    />
+                      srcset="img/adventage2_desktop_illustration.jpg 1x, img/adventage2_desktop_illustration@2x.jpg 2x"/>
                     <source
                       media="(min-width: 768px)"
-                      srcset="
-                        img/adventage2_tablet_illustration.jpg    1x,
-                        img/adventage2_tablet_illustration@2x.jpg 2x
-                      "
-                    />
+                      srcset=" img/adventage2_tablet_illustration.jpg 1x, img/adventage2_tablet_illustration@2x.jpg 2x"/>
                     <img
                       class="adventage__image"
                       src="img/adventage2_illustration.jpg"
                       srcset="img/adventage2_illustration@2x.jpg 2x"
                       width="320"
                       height="260"
-                      alt="Мост дьявола."
-                    />
+                      alt="Мост дьявола."/>
                   </picture>
                 </div>
               </li>
@@ -199,8 +194,8 @@
                     <div class="adventage__wrapper">
                       <h3 class="adventage__title title">КРАСИВАЯ ДОРОГА</h3>
                       <span class="adventage__number">— №4 —</span>
-                      <p class="adventage__description">
-                        ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                      <p class="adventage__description adventage__description--extra-padding">
+                        ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ&nbsp;СКУЧНО!
                       </p>
                     </div>
                   </li>
@@ -209,7 +204,7 @@
                       <h3 class="adventage__title title">МАЛО ТУРИСТОВ</h3>
                       <span class="adventage__number">— №5 —</span>
                       <p class="adventage__description">
-                        Большинство едет в гранд каньони толпится там
+                        Большинство едет в гранд каньон и толпится&nbsp;там
                       </p>
                     </div>
                   </li>
@@ -220,15 +215,15 @@
           <section class="main-index__booking intro">
             <div class="intro__booking-wrapper">
               <h2 class="visually-hidden">Забронировать отель.</h2>
-              <span class="intro__booking-title title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
+              <span class="intro__booking-title title title--bold">ЗАИНТЕРЕСОВАЛИСЬ?</span>
               <p class="intro__description">
                 Укажите предполагаемые даты поездки,
                 и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
-                &nbsp;предложения&nbsp; гостиниц&nbsp;в&nbsp;седоне
+                &nbsp;предложения&nbsp;гостиниц&nbsp;в&nbsp;седоне
               </p>
             </div>
             <div class="intro__booking-link-wrapper">
-              <a class="intro__booking-link link link--text" href="#">найти гостиницу</a>
+              <a class="intro__booking-link link link--text link--bold-text" href="#">найти гостиницу</a>
             </div>
           </section>
           <section class="main-index__map main-index__map--nojs">
@@ -238,11 +233,20 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939493.651906778!2d-112.49384384456822!3d34.968970980515046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681745768317!5m2!1sru!2sru"
               width="320"
               height="350"
-              style="border: 0"
+              style="border: 0;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp x2">
+              <source
+                media="(min-width:768px)"
+                srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp x2">
+              <source
+                media="(max-width:767px)"
+                srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp x2">
               <source
                 media="(min-width: 1200px)"
                 srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"/>
@@ -254,7 +258,8 @@
                 src="img/map-mobile.jpg"
                 srcset="img/map-mobile@2x.jpg 2x"
                 width="320"
-                height="350"/>
+                height="350"
+                alt="Седона на карте."/>
             </picture>
           </section>
         </main>
@@ -294,9 +299,6 @@
                 fill="none"
                 viewBox="0 0 28 36"
                 aria-labelledby="html-academy-site">
-                <title id="html-academy-site">
-                  ссылка на сайт html academy
-                </title>
                 <use xlink:href="#html-academy-icon"></use></svg></a>
           </div>
         </footer>

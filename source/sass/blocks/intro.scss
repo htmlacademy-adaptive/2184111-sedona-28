@@ -21,7 +21,34 @@
 .intro__description {
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+
+  &--bottom {
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 210px;
+      padding-top: 3px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
 }
+
 
 .intro__booking-wrapper {
   display: flex;
@@ -29,13 +56,13 @@
   width: 320px;
   padding-left: 29px;
   padding-right: 29px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding-left: 160px;
     padding-right: 160px;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,38 +73,59 @@
 }
 
 .intro__slogan {
-  margin-bottom: $intro-title-margin;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  &--form {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
 }
 
 .intro__booking-title {
-  margin-bottom: $intro-title-margin;
+  margin-bottom: 23px;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .intro__booking-link {
   padding: 16px 49px;
-  width: 320px;
+  width: 284px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;
-    padding: 14px 124px;
+    padding: 16px 124px;
   }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }
 
 .intro__booking-link-wrapper {
   text-align: center;
-
-  // @media (min-width: $tablet-width) {
-  //   padding: 166px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 166px;
 }
 
 .intro__title {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.intro__title.title--catalog {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }

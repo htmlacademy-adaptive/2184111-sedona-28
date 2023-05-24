@@ -5,7 +5,6 @@
   text-align: center;
   position: relative;
   background-color: #000000;
-  // background-position: center;
 
   @media (max-width: $mobile-width-only) {
     @media (min-resolution: 2dppx) {
@@ -41,15 +40,16 @@
   }
 
   &--inner-page {
-    padding: 52px 40px 67px 40px;
+    padding: 52px 40px 61px 40px;
     background-position: 50% 100%;
 
     @media (min-width: $tablet-width) {
-      padding: 95px 147px 117px 147px;
+      padding: 95px 147px 110px 147px;
     }
 
-    // @media (min-width: $desktop-width) {
-    // }
+    @media (min-width: $desktop-width) {
+      padding: 100px 147px 115px;
+    }
   }
 
   &::after {
@@ -63,12 +63,6 @@
     width: 100%;
     height: 57px;
     background-position: center;
-
-    // @media (min-width: $tablet-width) {
-    // }
-
-    // @media (min-width: $desktop-width) {
-    // }
   }
 }
 

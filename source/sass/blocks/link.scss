@@ -19,11 +19,14 @@
   &:active::after {
     opacity: 0.3;
   }
+
+  &--bold-text {
+    font-size: 21px;
+  }
 }
 
 .link-icon {
   background-repeat: no-repeat;
-  // background-color: #81b3d2;
   background-position: center;
   background-size: contain;
   width: 48px;

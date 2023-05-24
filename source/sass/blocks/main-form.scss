@@ -8,16 +8,10 @@
   @include catalog-padding;
 
   @media (min-width: $tablet-width) {
-    // display: flex;
     @include catalog-padding-tablet;
   }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }
 
-// .main-form__hero-text {
-// }
 
 .main-form__row-wrapper {
   display: block;
@@ -25,15 +19,30 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 63px;
+    margin-bottom: 35px;
   }
 
-  // @media (min-width: $desktop-width) {
-  // }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .main-form__intro {
   padding: 36px 20px 28px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #e5e5e5;
+    width: 112.5%;
+    height: 1px;
+    bottom: 0;
+    left: -6%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 64px 166px 108px 166px;
@@ -41,5 +50,17 @@
 
   @media (min-width: $desktop-width) {
     padding: 115px 382px 68px 382px;
+  }
+}
+
+.main-form__hero-text {
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    height: 80px;
   }
 }
