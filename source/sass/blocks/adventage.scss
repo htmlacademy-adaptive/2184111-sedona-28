@@ -145,3 +145,9 @@
   width: 100%;
   height: auto;
 }
+
+.adventage__with-image-wrappper--reversed .adventage__wrapper--color .adventage__description {
+  @media (min-width: $desktop-width) {
+    padding: 0 35px;
+  }
+}
