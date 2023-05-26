@@ -9,13 +9,15 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="body">
   <div class="page__container">
     <header class="header page__header header--menu-closed header--nojs">
-      <a class="header__logo logo" href="index.html">
+      <a class="header__logo logo" href="index.html">f
         <img src="img/logo.svg" width="185" height="96" alt="Логотип.">
       </a>
       <button class="header__menu-toggle button button--burger" type="button">
@@ -80,7 +82,7 @@
               </p>
               <p class="form__input-wrapper form__input-wrapper--email form__input-wrapper--right">
                 <label class="form__label label" for="email">электронная почта*:</label>
-                <input class="form__input input input--graph input--email input--count" type="text" id="email"
+                <input class="form__input input input--graph input--email input--count" type="email" id="email"
                   placeholder="Введите e-mail">
               </p>
             </fieldset>
@@ -155,14 +157,13 @@
             <label class="form__title title title--tablet-padding" for="review">опишите свои эмоции:</label>
             <div class="form__textarea-wrapper">
               <p class="form__input-wrapper">
-                <textarea class="form__textarea" id="review" name="story">Опишите подробно все свои восторги
-            </textarea>
+                <textarea class="form__textarea" id="review" name="story" placeholder="Опишите подробно все свои восторги"></textarea>
               </p>
             </div>
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button button--submit" type="button">отправить отзыв</button>
-            <span class="form-hint">* — обязательные поля</span>
+            <span class="form__hint">* — обязательные поля</span>
           </div>
           <div class="popup-error popup-error--closed popup-error--opened">
             <span class="popup-error__name title title--bold">что-то пошло не&nbsp;так!</span>

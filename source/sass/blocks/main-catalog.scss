@@ -10,7 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 371px 87px 371px;
+    padding: 100px 371px 87px;
+    padding-top: 98px;
+    padding-bottom: 89px;
   }
 
   &--bottom {
