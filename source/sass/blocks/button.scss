@@ -73,4 +73,16 @@
       width: 384px;
     }
   }
+
+  &--disabled {
+    cursor: not-allowed;
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 1);
+  }
 }

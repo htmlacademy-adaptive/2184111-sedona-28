@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"/>
   </head>
 
   <body class="body page__header">
@@ -60,9 +62,9 @@
                     <p class="adventage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                   </div>
                   <picture>
-                    <source media="(min-width:1200px)" srcset="img/adventage1_desktop_illustration.webp 1x, img/adventage1_desktop_illustration@2x.webp 2x">
-                    <source media="(min-width:768px)" srcset="img/adventage1_tablet_illustration.webp 1x, img/adventage1_tablet_illustration@2x.webp 2x">
-                    <source media="(max-width:767px)" srcset="img/adventage1_illustration.webp 1x, img/adventage1_illustration@2x.webp 2x">
+                    <source type="image/webp" media="(min-width:1200px)" srcset="img/adventage1_desktop_illustration.webp 1x, img/adventage1_desktop_illustration@2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/adventage1_tablet_illustration.webp 1x, img/adventage1_tablet_illustration@2x.webp 2x">
+                    <source type="image/webp" media="(max-width:767px)" srcset="img/adventage1_illustration.webp 1x, img/adventage1_illustration@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/adventage1_desktop_illustration.jpg 1x, img/adventage1_desktop_illustration@2x.jpg 2x"/>
                     <source media="(min-width: 768px)" srcset="img/adventage1_tablet_illustration.jpg 1x, img/adventage1_tablet_illustration@2x.jpg 2x"/>
                     <img class="adventage__image" src="img/adventage1_illustration.jpg" srcset="img/adventage1_illustration@2x.jpg 2x" alt="седона."/>
@@ -88,12 +90,12 @@
                   <div class="adventage__wrapper adventage__wrapper--color">
                     <h3 class="adventage__title title title--color">ТАМ ЕСТЬ Мост&nbsp;дьявола</h3>
                     <span class="adventage__number">— №2 —</span>
-                    <p class="adventage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <p class="adventage__description adventage__description--extra-color-padding">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/adventage2_desktop_illustration.webp 1x, img/adventage2_desktop_illustration@2x.webp 2x"/>
-                    <source media="(min-width: 768px)" srcset="img/adventage2_tablet_illustration.webp 1x, img/adventage2_tablet_illustration@2x.webp 2x"/>
-                    <source media="(max-width: 767px)" srcset="img/adventage2_illustration.webp 1x, img/adventage2_illustration@2x.webp 2x"/>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/adventage2_desktop_illustration.webp 1x, img/adventage2_desktop_illustration@2x.webp 2x"/>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/adventage2_tablet_illustration.webp 1x, img/adventage2_tablet_illustration@2x.webp 2x"/>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/adventage2_illustration.webp 1x, img/adventage2_illustration@2x.webp 2x"/>
                     <source media="(min-width: 1200px)" srcset="img/adventage2_desktop_illustration.jpg 1x, img/adventage2_desktop_illustration@2x.jpg 2x"/>
                     <source media="(min-width: 768px)" srcset=" img/adventage2_tablet_illustration.jpg 1x, img/adventage2_tablet_illustration@2x.jpg 2x"/>
                     <img class="adventage__image" src="img/adventage2_illustration.jpg" srcset="img/adventage2_illustration@2x.jpg 2x" width="320" height="260" alt="Мост дьявола."/>
@@ -150,9 +152,9 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <picture>
-              <source media="(min-width:1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-              <source media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-              <source media="(max-width:767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width:767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"/>
               <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x"/>
               <img class="main-index__map-img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Седона на карте."/>
@@ -165,7 +167,7 @@
             <span class="footer__hashteg title">#visitSEDONA</span>
             <ul class="footer__social-list">
               <li class="footer__social-item social-item">
-                <a class="social-item__link link link-icon link-icon--vk"href="#">
+                <a class="social-item__link link link-icon link-icon--vk "href="#">
                   <span class="visually-hidden">Вконтакте.</span>
                 </a>
               </li>
